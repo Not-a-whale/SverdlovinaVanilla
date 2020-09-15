@@ -1,0 +1,23 @@
+// Colors
+
+$primary-color-1: #45d3fe;
+$primary-color-2: #408ce1;
+
+$dark-blue-color: #408ce1;
+
+$form-color: rgba(255, 255, 255, 0.2);
+
+$white-color: #ffffff;
+
+$font-color: #000000;
+
+$background-gradient: linear-gradient(
+  to right top,
+  $primary-color-1,
+  $primary-color-2
+);
+
+// GRID
+$grid-width: 138.8rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;

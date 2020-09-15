@@ -1,0 +1,34 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layout/top_navigation";
+@import "layout/form_slider";
+@import "layout/footer";
+@import "layout/_grid";
+
+@import "pages/home";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-weight: 500;
+  line-height: 1.7;
+  color: $font-color;
+}

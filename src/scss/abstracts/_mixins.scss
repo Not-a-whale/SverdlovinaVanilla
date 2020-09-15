@@ -1,0 +1,94 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }
+}
+
+// Heading on main page
+
+@mixin heading() {
+  .heading {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $white-color;
+    padding-bottom: 2rem;
+
+    @media screen and (max-width: 1024px) {
+      height: 10vh;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 10vh;
+      padding-bottom: 0.5rem;
+    }
+
+    @media screen and (max-width: 420px) {
+      height: 7vh;
+    }
+
+    &--text {
+      color: $font-color;
+      font-size: 4.8rem;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 420px) {
+        padding-top: 1rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    &--underline {
+      height: 2.1rem;
+      width: 18.3rem;
+      background: $background-gradient;
+      margin-top: 1rem;
+
+      @media screen and (max-width: 768px) {
+        height: 1rem;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
