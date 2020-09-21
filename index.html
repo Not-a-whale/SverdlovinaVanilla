@@ -4,18 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sverdlovina</title>
+    <link href="https://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet" />
     <link rel="stylesheet" href="./dist/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar">
-      <div class="navbar__logo">
-        <img src="" alt="" class="navbar__logo--image" />
+      <div href="#" class="navbar__logo">
+        <object
+          data="./src/img/navigation/logo/logo.svg"
+          type="image/svg+xml"
+          class="navbar__logo--image"
+        ></object>
         <div class="navbar__logo--text">
-          <span class="navbar__logo--top">Sverdlovina</span>
-          <span class="navbar__logo--bottom">буріння свердловин</span>
+          <span class="navbar__logo--text--top">Sverdlovyna</span>
+          <span class="navbar__logo--text--bottom">буріння свердловин</span>
         </div>
       </div>
-      <div class="navbar__right" style="margin-left: 3rem">
+      <div class="navbar__right">
         <ul class="navbar__list">
           <li class="navbar__item">
             <a href="#" class="navbar__link">Про компанію</a>
@@ -34,45 +43,49 @@
           </li>
         </ul>
         <div class="navbar__phone">
-          <object
-            type="image/svg+xml"
-            data="./src/img/navigation/phone.svg"
-            class="logo"
-          ></object>
-          <span class="navbar__number">+380 63 625 63 17</span>
+          <a href="tel: +380636256317">
+            <object
+              type="image/svg+xml"
+              data="./src/img/navigation/phone.svg"
+              class="navbar__phone--logo"
+            ></object>
+            <span class="navbar__number">+380 63 625 63 17</span></a
+          >
         </div>
-      </div>
-      <div class="navbar__languages">
-        <div class="navbar__languages--container">
-          <div class="option">
-            <input
-              type="radio"
-              class="flag flag--ukr"
-              id="ukrFlag"
-              name="urkFlag"
-            />
-            <label for="urkFlag">
-              <img
-                src="./src/img/navigation/320px-Flag_of_Ukraine.svg.webp"
-                alt=""
-                style="width: 30px; height: 20px"
+        <div class="navbar__languages">
+          <div class="navbar__languages--container">
+            <div class="option option__ukr">
+              <input
+                type="radio"
+                class="flag flag--ukr"
+                id="ukrFlag"
+                name="ukrFlag"
               />
-            </label>
-          </div>
-          <div class="option">
-            <input
-              type="radio"
-              class="flag flag--ukr"
-              id="ukrFlag"
-              name="urkFlag"
-            />
-            <label for="urkFlag">
-              <img
-                src="./src/img/navigation/320px-Flag_of_Russia.svg.webp"
-                alt=""
-                style="width: 30px; height: 20px"
+              <label for="ukrFlag">
+                <img
+                  src="./src/img/navigation/320px-Flag_of_Ukraine.svg.webp"
+                  alt=""
+                  style="width: 30px; height: 20px"
+                />
+              </label>
+            </div>
+            <div class="option">
+              <input
+                type="radio"
+                class="flag flag--ru"
+                id="ruFlag"
+                name="ruFlag"
+                class="flagLabel"
               />
-            </label>
+              <label for="ruFlag">
+                <img
+                  src="./src/img/navigation/320px-Flag_of_Russia.svg.webp"
+                  alt=""
+                  style="width: 30px; height: 20px"
+                  class="flagLabel"
+                />
+              </label>
+            </div>
           </div>
           <svg
             width="20"
@@ -85,8 +98,299 @@
           </svg>
         </div>
       </div>
+      <a href="#" class="link">
+        <div class="link__hamburger link__hamburger--1"></div>
+        <div class="link__hamburger link__hamburger--2"></div>
+        <div class="link__hamburger link__hamburger--3"></div>
+      </a>
     </nav>
-    <section class="form-slider"></section>
+    <section class="form-slider">
+      <div class="slider">
+        <div class="slider__slide slider__slide-1 active-slide"></div>
+        <div class="slider__slide slider__slide-2"></div>
+        <div class="slider__slide slider__slide-3"></div>
+      </div>
+      <div class="content">
+        <div class="content__text">
+          <h1 class="content__header">
+            Буріння свердловин <br class="br-1" />
+            на воду <br class="br-2" />
+            будь-якої <br class="br-3" />
+            складності
+          </h1>
+          <h2 class="content__description">
+            В Рівненській, Хмельницькій та Волинскій областях.
+          </h2>
+          <button class="content__button">Більше</button>
+        </div>
+        <form action="#" class="content__form">
+          <div class="content__form--heading">
+            Замовити<br />
+            консультацію
+          </div>
+          <input
+            type="text"
+            name="name"
+            id="formName"
+            class="content__form--name"
+            placeholder="Ваше ім'я"
+          />
+          <input
+            type="text"
+            name="phone"
+            id="formNumber"
+            class="content__form--number"
+            placeholder="Номер телефону"
+          />
+          <input
+            type="email"
+            name="email"
+            id="formEmail"
+            class="content__form--email"
+            placeholder="E-mail"
+          />
+          <button type="submit" class="content__form--button" id="formButton">
+            Надіслати заявку
+          </button>
+        </form>
+      </div>
+      <div class="arrow arrow__left" id="arrowLeft">
+        <div class="arrow--img arrow--img--left"></div>
+      </div>
+      <div class="arrow arrow__right turn-right" id="arrowRight">
+        <div class="arrow--img arrow--img--right"></div>
+      </div>
+      <div class="numbers">
+        <span class="numbers__number numbers__number--1 numbers__number-active"
+          >01</span
+        >
+        <span class="numbers__line numbers__line--1"></span>
+        <span class="numbers__number numbers__number--2">02</span>
+        <span class="numbers__line numbers__line--2 second"></span>
+        <span class="numbers__number numbers__number--3">03</span>
+      </div>
+    </section>
+    <section class="about">
+      <div class="heading">
+        <h1 class="heading--text">Про компанію</h1>
+        <div class="heading--underline"></div>
+      </div>
+      <article class="about__content row">
+        <div class="about__text col-1-of-2">
+          <h2 class="about__heading">
+            Якісне буріння свердловин від
+            <a class="text-link" href="#">надійної компанії.</a>
+          </h2>
+          <p class="about__description">
+            З моменту свого заснування у 1996 році, наша спеціалізована компанія
+            здійснює якісне гідрогеологічне буріння свердловин будь-якої
+            складності.
+            <br />Кваліфіковані фахівці компанії
+            <a class="text-link" href="#">«Свердловина»</a> ефективно
+            користуються багаторічним досвідом і науковим підходом до проведення
+            бурових операцій. <br />У нашому розпорядженні є сучасна техніка,
+            яка значно підвищує продуктивність робіт. <br />Ми постійно
+            займаємося проектуванням, бурінням і капітальним ремонтом
+            свердловин, за весь період професійної діяльності компанія виконала
+            роботи на більш ніж трьох тисячах об'єктах.
+          </p>
+        </div>
+        <div class="about__right col-1-of-2">
+          <div class="about__composition">
+            <img
+              src="./src/img/about/Photo-about-1.jpg"
+              alt="Photo 1"
+              class="about__composition__photo about__composition__photo--1"
+            />
+            <img
+              src="./src/img/about/Photo-about-2.jpg"
+              alt="Photo 2"
+              class="about__composition__photo about__composition__photo--2"
+            />
+            <img
+              src="./src/img/about/Photo-about-3.jpg"
+              alt="Photo 3"
+              class="about__composition__photo about__composition__photo--3"
+            />
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="services">
+      <div class="heading">
+        <h2 class="heading--text">Види послуг</h2>
+        <span class="heading--underline"></span>
+      </div>
+      <div class="row">
+        <div class="col-1-of-4">
+          <a href="#" class="services__link">
+            <div class="services__image">
+              <img
+                src="./src/img/services/drilling.png"
+                alt="Drilling"
+                class="services__image--pic"
+              />
+            </div>
+            <p class="services__text">Буріння свердловин</p>
+          </a>
+        </div>
+        <div class="col-1-of-4">
+          <a href="#" class="services__link">
+            <div class="services__image">
+              <img
+                src="./src/img/services/water-drilling.png"
+                alt="Water Drilling"
+                class="services__image--pic"
+              />
+            </div>
+
+            <p class="services__text">
+              Буріння гідроекологічних свердловин на воду
+            </p>
+          </a>
+        </div>
+        <div class="col-1-of-4">
+          <a href="#" class="services__link">
+            <div class="services__image">
+              <img
+                src="./src/img/services/pillar-drilling.png"
+                alt="Pillar Drilling"
+                class="services__image--pic"
+                id="pillars"
+              />
+            </div>
+            <p class="services__text">
+              Буріння свердловин під буронабивні палі
+            </p>
+          </a>
+        </div>
+        <div class="col-1-of-4">
+          <a href="#" class="services__link">
+            <div class="services__image">
+              <img
+                src="./src/img/services/geo-eco-grilling.png"
+                alt="Geoecological Drilling"
+                class="services__image--pic"
+              />
+            </div>
+            <p class="services__text">Гідроекологічні роботи</p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-4">
+          <a href="#" class="services__link">
+            <div class="services__image">
+              <img
+                src="./src/img/services/eng-find.png"
+                alt="Engineering and Geoecological findings"
+                class="services__image--pic services__image--find"
+                id="find"
+              />
+            </div>
+            <p class="services__text">
+              Інженерно-Геоекологічні та геодезичні вишукування
+            </p>
+          </a>
+        </div>
+        <div class="col-1-of-4">
+          <a href="#" class="services__link">
+            <div class="services__image">
+              <img
+                src="./src/img/services/lowering.png"
+                alt="Lowering watter levels for building"
+                class="services__image--pic"
+              />
+            </div>
+            <p class="services__text">Будівельне водозниження</p>
+          </a>
+        </div>
+        <div class="col-1-of-4">
+          <a href="#" class="services__link">
+            <div class="services__image card__container">
+              <img
+                src="./src/img/services/electro-protect-outer.png"
+                alt="Outer immage of electrical protection block"
+                class="services__image--outer"
+              />
+              <img
+                src="./src/img/services/electro-protect-inner.png"
+                alt="Inner image of electrical protection block"
+                class="services__image--inner"
+                id="innerCircle"
+              />
+            </div>
+            <p class="services__text">Електрохімзахист</p>
+          </a>
+        </div>
+        <div class="col-1-of-4">
+          <a href="#" class="services__link">
+            <div class="services__image">
+              <img
+                src="./src/img/services/plugging.png"
+                alt="Drilling plugging"
+                class="services__image--pic"
+                id="plugging"
+              />
+            </div>
+            <p class="services__text">Тампонування свердловини</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="heading">
+        <h2 class="heading--text">Види послуг</h2>
+        <span class="heading--underline"></span>
+      </div>
+      <div class="row">
+        <div class="partners__partner">
+          <a href="http://www.zb2.com.ua/">
+            <img
+              src="./src/img/partners/Zhitlobud.png"
+              alt="Zhutlobud image"
+              class="right__img partners__img"
+            />
+          </a>
+        </div>
+        <div class="partners__partner">
+          <a href="https://evrobud.renome.ua/">
+            <img
+              src="./src/img/partners/Renome.png"
+              alt="Renome image"
+              class="partners__img center__img--1"
+            />
+          </a>
+        </div>
+        <div class="partners__partner">
+          <a href="http://pankurchak.ua/">
+            <img
+              src="./src/img/partners/Pan_Kurchak.png"
+              alt="Pan Kurchak image"
+              class="partners__img center__img--2"
+            />
+          </a>
+        </div>
+        <div class="partners__partner">
+          <a href="http://www.ukrcom.net/">
+            <img
+              src="./src/img/partners/UkrCom.png"
+              alt="Ukrcom image"
+              class="partners__img center__img--bottom"
+            />
+          </a>
+        </div>
+        <div class="partners__partner">
+          <a href="http://www.lstm.com.ua/">
+            <img
+              src="./src/img/partners/LutskSantekhMontazh.png"
+              alt="LutskSantechMontazh image"
+              class="partners__img left__img"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
     <script type="text/javascript" src="dist/bundle.js"></script>
   </body>
 </html>

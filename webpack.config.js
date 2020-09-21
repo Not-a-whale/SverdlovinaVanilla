@@ -12,6 +12,14 @@ module.exports = {
         test: /\.(s*)css$/,
         use: [miniCss.loader, "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|jpg)$/,
+        use: "file-loader",
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: "url-loader?limit=100000",
+      },
     ],
   },
   plugins: [

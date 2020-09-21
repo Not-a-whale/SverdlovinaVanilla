@@ -1,0 +1,23 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  @include heading;
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__partner {
+  }
+
+  &__img {
+    width: 15.5rem;
+    height: 7.4rem;
+    margin-right: 4rem;
+  }
+}

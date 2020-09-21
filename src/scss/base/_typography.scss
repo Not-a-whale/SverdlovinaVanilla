@@ -1,19 +1,39 @@
+/* @font-face {
+  font-family: Futura;
+  src: url("../fonts/Futura Bold font.ttf");
+}
+
+@font-face {
+  font-family: Futura;
+  src: url("../fonts/futura_medium_bt-webfont.woff") format("WOFF");
+  font-weight: 300;
+}
+ */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+
+$main-heading-font: "Futura Md BT", sans-serif;
+$secondary-heading-font: Futura;
+$main-font: Roboto;
+
 body {
   @include respond(tab-land) {
     // width < 1200?
-    font-size: 56.25% !important; //1 rem = 9px, 9/16 = 50%
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
   }
 
   @include respond(tab-port) {
     // width < 900?
-    font-size: 50% !important; //1 rem = 8px, 8/16 = 50%
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
   }
 
   @include respond(phone) {
-    font-size: 37.5% !important;
+    font-size: 37.5%;
   }
 
   @include respond(big-desktop) {
-    font-size: 75% !important; //1rem = 12, 12/16
+    font-size: 75%; //1rem = 12, 12/16
   }
 }

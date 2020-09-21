@@ -13,15 +13,19 @@
   "devDependencies": {
     "css-loader": "^4.3.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^6.1.0",
     "mini-css-extract-plugin": "^0.11.2",
     "node-sass": "^4.14.1",
+    "resolve-url-loader": "^3.1.1",
     "sass": "^1.26.10",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "ttf-loader": "^1.0.2",
     "webpack-split-by-path": "^2.0.0"
   }
 }

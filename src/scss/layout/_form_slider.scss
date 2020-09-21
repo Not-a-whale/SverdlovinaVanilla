@@ -1,0 +1,394 @@
+.form-slider {
+  position: relative;
+  width: 100%;
+  padding-top: 54.67%;
+  background-size: cover;
+  background-position: 100% 55%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @include respond(tab-port) {
+    height: 50vh;
+  }
+
+  @include respond(phone) {
+    height: 60vh;
+  }
+
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    overflow: hidden;
+    transition: 1s all;
+    display: flex;
+    &__slide {
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: 4s all;
+
+      &.top {
+        z-index: 10;
+      }
+
+      &-1 {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.22),
+            rgba(0, 0, 0, 0.22)
+          ),
+          linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(255, 255, 255, 0) 33.65%
+          ),
+          url("../img/form-slider/slider-1.jpg");
+        background-size: cover;
+        background-position: 100% 65%;
+        background-repeat: no-repeat;
+        @include respond(tab-port) {
+          background-size: cover;
+          padding-top: 55.67%;
+          background-position: 50% 100%;
+        }
+      }
+      &-2 {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.22),
+            rgba(0, 0, 0, 0.22)
+          ),
+          linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(255, 255, 255, 0) 53.65%
+          ),
+          url("../img/form-slider/slider-2.jpg");
+        background-size: cover;
+        background-position: 100% 40%;
+        background-repeat: no-repeat;
+        @include respond(tab-port) {
+          padding-top: 30%;
+          background-size: cover;
+          background-position: 50% 60%;
+        }
+      }
+      &-3 {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.22),
+            rgba(0, 0, 0, 0.22)
+          ),
+          linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(255, 255, 255, 0) 53.65%
+          ),
+          url("../img/form-slider/slider-3.jpg");
+        background-size: cover;
+        background-position: 100% 40%;
+        background-repeat: no-repeat;
+
+        @include respond(tab-port) {
+          padding-top: 10.67%;
+          background-position: 60% 80%;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 13rem;
+      width: 35rem;
+      height: 40rem;
+      background: rgba(255, 255, 255, 0.02);
+      -webkit-backdrop-filter: blur(120px);
+      backdrop-filter: blur(120px);
+      border-radius: 13px;
+
+      @include respond(tab-land) {
+        margin-right: 5rem;
+      }
+
+      &--heading {
+        font-family: $secondary-heading-font;
+        font-weight: bold;
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white-color;
+        letter-spacing: 3px;
+        margin-bottom: 3rem;
+
+        @include respond(tab-port) {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      input {
+        height: 5rem;
+        width: 87%;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        -webkit-filter: drop-shadow(0px 7px 14px rgba(74, 151, 219, 0.5));
+        filter: drop-shadow(0px 7px 14px rgba(74, 151, 219, 0.5));
+        border-radius: 7px;
+        font-size: 1.6rem;
+        font-family: $main-font;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+        z-index: 99999999;
+        color: $white-color;
+        letter-spacing: 1px;
+
+        &:focus {
+          outline: none;
+          background-color: rgba($white-color, 0.2);
+          &::-webkit-input-placeholder {
+            color: $white-color;
+          }
+          &::-moz-placeholder {
+            color: $font-color;
+          }
+          &:-ms-input-placeholder {
+            color: $font-color;
+          }
+          &::-ms-input-placeholder {
+            color: $font-color;
+          }
+          &::placeholder {
+            color: $font-color;
+          }
+        }
+      }
+
+      button {
+        height: 5rem;
+        width: 91%;
+        border: none;
+        background: #5aa4e5;
+        box-shadow: 0px 7px 14px rgba(74, 151, 219, 0.3);
+        border-radius: 7px;
+        font-size: 1.6rem;
+        line-height: 19px;
+        color: $white-color;
+        outline: none;
+        transition: 0.3s all;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #5cb85c;
+          outline: none;
+          box-shadow: 0px 9px 17px rgba($color: #5cb85c, $alpha: 0.3);
+          transform: scale(1.02);
+          transition: 0.3s all;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &:active {
+          outline: none;
+          transform: scale(0.98);
+        }
+      }
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    &__text {
+      margin-left: 10rem;
+
+      @include respond(tab-port) {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @include respond(phone) {
+        width: 90%;
+      }
+    }
+
+    &__header {
+      font-size: 4rem;
+      line-height: 5.3rem;
+      font-weight: bold;
+      font-family: $secondary-heading-font;
+      color: $white-color;
+
+      br.br-1 {
+        display: none;
+      }
+
+      br.br-2 {
+        display: block;
+      }
+
+      br.br-3 {
+        display: none;
+      }
+
+      @include respond(tab-port) {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        text-align: center;
+        br.br-1 {
+          display: block;
+        }
+        br.br-2 {
+          display: none;
+        }
+        br.br-3 {
+          display: block;
+        }
+      }
+    }
+
+    &__description {
+      font-size: 2.2rem;
+      color: $white-color;
+      font-style: normal;
+      font-weight: 100;
+      line-height: 157%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      @include respond(tab-port) {
+        text-align: center;
+      }
+    }
+
+    &__button {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      background-color: transparent;
+      color: $white-color;
+      padding: 1rem 3rem;
+      border-radius: 100px;
+      transition: 0.3s all;
+      outline: none;
+
+      &:hover {
+        cursor: pointer;
+        background: #5aa4e5;
+        border: 1px solid rgba(#5aa4e5, 0.5);
+      }
+
+      @include respond(tab-port) {
+        width: 70%;
+      }
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    top: 0;
+    width: 3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+
+    @include respond(tab-port) {
+      width: 7%;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+
+    &__left {
+      left: 0.5rem;
+
+      @include respond(tab-port) {
+        left: 4px;
+      }
+    }
+
+    &__right {
+      right: 0.5rem;
+
+      @include respond(tab-port) {
+        right: 4px;
+      }
+    }
+
+    &--img {
+      height: 2rem;
+      width: 2rem;
+      border: 1px solid $white-color;
+      transform: rotate(45deg);
+
+      &--left {
+        border-top: 1px solid transparent;
+        border-right: 1px solid transparent;
+      }
+
+      &--right {
+        border-bottom: 1px solid transparent;
+        border-left: 1px solid transparent;
+      }
+    }
+  }
+
+  .numbers {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 10%;
+    left: 50%;
+    width: 20rem;
+    color: $white-color;
+    font-size: 1.6rem;
+    font-family: $secondary-heading-font;
+    transform: translateX(-50%);
+    &__number {
+      &-active {
+        font-weight: bold;
+        transform: scale(1.2);
+      }
+    }
+
+    &__line {
+      height: 2px;
+      background-color: $white-color;
+      width: 4rem;
+      margin-top: 7%;
+      margin-left: -2.3rem;
+      transform-origin: left;
+
+      &.second {
+        margin-left: -2rem;
+      }
+    }
+  }
+}
