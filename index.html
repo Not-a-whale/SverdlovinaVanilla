@@ -288,8 +288,8 @@
                 id="find"
               />
             </div>
-            <p class="services__text">
-              Інженерно-Геоекологічні та геодезичні вишукування
+            <span class="services__text">
+              <span id="geo">Інженерно-Геоекологічні та</span> геодезичні вишукування
             </p>
           </a>
         </div>
@@ -340,55 +340,99 @@
     </section>
     <section class="partners">
       <div class="heading">
-        <h2 class="heading--text">Види послуг</h2>
+        <h2 class="heading--text">
+          Нам довіряють
+        </h2>
         <span class="heading--underline"></span>
       </div>
-      <div class="row">
-        <div class="partners__partner">
-          <a href="http://www.zb2.com.ua/">
-            <img
-              src="./src/img/partners/Zhitlobud.png"
-              alt="Zhutlobud image"
-              class="right__img partners__img"
-            />
-          </a>
+      <div class="partners__row">
+        <div class="partners__column">
+          <div class="partners__partner">
+            <a href="http://www.zb2.com.ua/">
+              <img
+                src="./src/img/partners/Zhitlobud.png"
+                alt="Zhutlobud image"
+                class="right__img partners__img"
+                style="width: 11.2rem;
+                height: 7.8rem;"
+              />
+            </a>
+          </div>
+          <div class="partners__partner">
+            <a href="https://evrobud.renome.ua/">
+              <img
+                src="./src/img/partners/Renome.png"
+                alt="Renome image"
+                class="partners__img center__img--1"
+                style="width: 16.6rem;
+                height: 3.8rem;"
+              />
+            </a>
+          </div>
         </div>
-        <div class="partners__partner">
-          <a href="https://evrobud.renome.ua/">
-            <img
-              src="./src/img/partners/Renome.png"
-              alt="Renome image"
-              class="partners__img center__img--1"
-            />
-          </a>
+        <div class="partners__column">
+          <div class="partners__partner">
+            <a href="http://pankurchak.ua/">
+              <img
+                src="./src/img/partners/Pan_Kurchak.png"
+                alt="Pan Kurchak image"
+                class="partners__img center__img--2"
+                style="width: 14.8rem;
+                height: 2.7rem;"
+              />
+            </a>
+          </div>
+          <div class="partners__partner">
+            <a href="http://www.lstm.com.ua/">
+              <img
+                src="./src/img/partners/LutskSantekhMontazh.png"
+                alt="LutskSantechMontazh image"
+                class="partners__img left__img"
+                style="width: 7.9rem;
+                height: 7.6rem;"
+              />
+            </a>
+          </div>
         </div>
-        <div class="partners__partner">
-          <a href="http://pankurchak.ua/">
-            <img
-              src="./src/img/partners/Pan_Kurchak.png"
-              alt="Pan Kurchak image"
-              class="partners__img center__img--2"
-            />
-          </a>
+        <div class="partners__column--3">
+          <div class="partners__partner">
+            <a href="http://www.ukrcom.net/">
+              <img
+                src="./src/img/partners/UkrCom.png"
+                alt="Ukrcom image"
+                class="partners__img center__img--bottom"
+                style="width: 15rem;
+                height: 5.2rem;"
+              />
+            </a>
+          </div>
         </div>
-        <div class="partners__partner">
-          <a href="http://www.ukrcom.net/">
-            <img
-              src="./src/img/partners/UkrCom.png"
-              alt="Ukrcom image"
-              class="partners__img center__img--bottom"
-            />
-          </a>
+      </div>
+    </section>
+    <section class="ribbon">
+      <div href="#" class="ribbon__logo">
+        <object
+          data="./src/img/navigation/logo/logo.svg"
+          type="image/svg+xml"
+          class="rinbbon__logo--image"
+        ></object>
+        <div class="rinbbon__logo--text">
+          <span class="ribbon__logo--text--top">Sverdlovyna</span>
+          <span class="ribbon__logo--text--bottom">буріння свердловин</span>
         </div>
-        <div class="partners__partner">
-          <a href="http://www.lstm.com.ua/">
-            <img
-              src="./src/img/partners/LutskSantekhMontazh.png"
-              alt="LutskSantechMontazh image"
-              class="partners__img left__img"
-            />
-          </a>
-        </div>
+      </div>
+      <div class="ribbon__right">
+        <article class="ribbon__description">
+          <div class="ribbon__text">          
+            <h3 class="ribbon__heading">
+              Виникли запитання?
+            </h3>
+            <p class="ribbon__text--text">
+              Замов консультацію у нашого спеціаліста.
+            </p>
+         </div>
+         <button class="ribbon__button" id="ribbonRequest">Замовити консультацію</button>
+        </article>
       </div>
     </section>
     <script type="text/javascript" src="dist/bundle.js"></script>

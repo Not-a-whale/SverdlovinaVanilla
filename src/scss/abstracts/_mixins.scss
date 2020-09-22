@@ -55,7 +55,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     align-items: center;
     justify-content: center;
     background-color: $white-color;
-    margin-top: 3rem;
+    margin-top: 8rem;
     padding-bottom: 2rem;
 
     @include respond(tab-port) {

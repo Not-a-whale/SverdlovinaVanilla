@@ -30,7 +30,7 @@
   }
 
   &__description {
-    padding: 2rem;
+    padding: 2rem 0 2rem 2rem;
     font-family: $main-font;
     font-style: normal;
     font-weight: normal;
@@ -58,7 +58,7 @@
     }
 
     @include respond(tab-port) {
-      transform: translateX(0);
+      transform: translateX(2%);
     }
 
     &__photo {

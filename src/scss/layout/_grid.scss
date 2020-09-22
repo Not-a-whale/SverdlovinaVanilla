@@ -3,7 +3,6 @@
   background-color: #eee;
   margin: 0 auto;
   margin-bottom: 10rem;
-  margin-top: 2rem;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
@@ -26,7 +25,7 @@
     }
 
     @include respond(tab-port) {
-      width: 100%;
+      width: 97%;
     }
   }
 
@@ -41,6 +40,10 @@
   }
 
   .col-1-of-4 {
+    float: left;
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
     width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
   }
 
