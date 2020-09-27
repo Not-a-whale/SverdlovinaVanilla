@@ -48,7 +48,7 @@
     z-index: 1;
     box-shadow: 0px 8px 60px rgba(90, 164, 229, 0.6);
     overflow: hidden;
-
+    cursor: pointer;
     @include respond(tab-land) {
       width: 15rem;
       height: 15rem;
@@ -116,14 +116,16 @@
       z-index: -1;
       transition: 0.4s all ease-in-out;
       opacity: 0;
+      cursor: pointer;
     }
 
     &:hover {
       &::before {
         opacity: 1;
         transform: scale(1.02);
-        box-shadow: inset 4px 4px 4px 0px rgba(255, 255, 255, 0.3),
+        box-shadow: inset 4px 4px 7px 0px rgba(255, 255, 255, 0.3),
           5px 5px 7px 0px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
       }
     }
 
