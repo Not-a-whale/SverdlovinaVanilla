@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sverdlovina</title>
+    <link href="https://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div href="#" class="navbar__logo">
+        <object
+          data="./img/navigation/logo/logo.svg"
+          type="image/svg+xml"
+          class="navbar__logo--image"
+        ></object>
+        <div class="navbar__logo--text">
+          <span class="navbar__logo--text--top">Sverdlovyna</span>
+          <span class="navbar__logo--text--bottom">буріння свердловин</span>
+        </div>
+      </div>
+      <div class="navbar__right">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Про компанію</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Послуги</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Фотогалерея</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Блог</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Контакти</a>
+          </li>
+        </ul>
+        <div class="navbar__phone">
+          <a href="tel: +380636256317">
+            <object
+              type="image/svg+xml"
+              data="./img/navigation/phone.svg"
+              class="navbar__phone--logo"
+            ></object>
+            <span class="navbar__number">+380 63 625 63 17</span></a
+          >
+        </div>
+        <div class="navbar__languages">
+          <div class="navbar__languages--container">
+            <div class="option option__ukr">
+              <input
+                type="radio"
+                class="flag flag--ukr"
+                id="ukrFlag"
+                name="ukrFlag"
+              />
+              <label for="ukrFlag">
+                <img
+                  src="./img/navigation/320px-Flag_of_Ukraine.svg.webp"
+                  alt=""
+                  style="width: 30px; height: 20px"
+                />
+              </label>
+            </div>
+            <div class="option">
+              <input
+                type="radio"
+                class="flag flag--ru"
+                id="ruFlag"
+                name="ruFlag"
+                class="flagLabel"
+              />
+              <label for="ruFlag">
+                <img
+                  src="./img/navigation/320px-Flag_of_Russia.svg.webp"
+                  alt=""
+                  style="width: 30px; height: 20px"
+                  class="flagLabel"
+                />
+              </label>
+            </div>
+          </div>
+          <svg
+            width="20"
+            height="10"
+            viewBox="0 0 7 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M1 1L3.5 4L6 1" stroke="#ABABAB" stroke-width="1.5" />
+          </svg>
+        </div>
+      </div>
+      <a href="#" class="link">
+        <div class="link__hamburger link__hamburger--1"></div>
+        <div class="link__hamburger link__hamburger--2"></div>
+        <div class="link__hamburger link__hamburger--3"></div>
+      </a>
+    </nav>
+    <section class="form-slider">
+      <div class="slider">
+        <div class="slider__slide slider__slide-1 active-slide"></div>
+        <div class="slider__slide slider__slide-2"></div>
+        <div class="slider__slide slider__slide-3"></div>
+      </div>
+      <div class="content">
+        <div class="content__text">
+          <h1 class="content__header">
+            Буріння свердловин <br class="br-1" />
+            на воду <br class="br-2" />
+            будь-якої <br class="br-3" />
+            складності
+          </h1>
+          <h2 class="content__description">
+            В Рівненській, Хмельницькій та Волинскій областях.
+          </h2>
+          <button class="content__button">Більше</button>
+        </div>
+        <form action="#" class="content__form">
+          <div class="content__form--heading">
+            Замовити<br />
+            консультацію
+          </div>
+          <input
+            type="text"
+            name="name"
+            id="formName"
+            class="content__form--name"
+            placeholder="Ваше ім'я"
+          />
+          <input
+            type="text"
+            name="phone"
+            id="formNumber"
+            class="content__form--number"
+            placeholder="Номер телефону"
+          />
+          <input
+            type="email"
+            name="email"
+            id="formEmail"
+            class="content__form--email"
+            placeholder="E-mail"
+          />
+          <button type="submit" class="content__form--button" id="formButton">
+            Надіслати заявку
+          </button>
+        </form>
+      </div>
+      <div class="arrow arrow__left" id="arrowLeft">
+        <div class="arrow--img arrow--img--left"></div>
+      </div>
+      <div class="arrow arrow__right turn-right" id="arrowRight">
+        <div class="arrow--img arrow--img--right"></div>
+      </div>
+      <div class="numbers">
+        <span class="numbers__number numbers__number--1 numbers__number-active"
+          >01</span
+        >
+        <span class="numbers__line numbers__line--1"></span>
+        <span class="numbers__number numbers__number--2">02</span>
+        <span class="numbers__line numbers__line--2 second"></span>
+        <span class="numbers__number numbers__number--3">03</span>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="./bundle.js"></script>
+  </body>
+</html>

@@ -4,7 +4,12 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 5rem;
   @include heading;
+
+  .heading {
+    margin-top: 5rem;
+  }
 
   &__row {
     width: 100%;
@@ -12,6 +17,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 1rem;
 
     @include respond(tab-land) {
       justify-content: space-around;
