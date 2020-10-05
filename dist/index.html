@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="./index.html" class="navbar__logo" style="cursor: pointer;">
+      <div href="#" class="navbar__logo">
         <object
           data="./img/navigation/logo/logo.svg"
           type="image/svg+xml"
@@ -23,7 +23,7 @@
           <span class="navbar__logo--text--top">Sverdlovyna</span>
           <span class="navbar__logo--text--bottom">буріння свердловин</span>
         </div>
-      </a>
+      </div>
       <div class="navbar__right">
         <ul class="navbar__list">
           <li class="navbar__item">
@@ -39,7 +39,7 @@
             <a href="#" class="navbar__link">Блог</a>
           </li>
           <li class="navbar__item">
-            <a href="contacts.html" class="navbar__link">Контакти</a>
+            <a href="/contacts.html" class="navbar__link">Контакти</a>
           </li>
         </ul>
         <div class="navbar__phone">
@@ -49,7 +49,7 @@
               data="./img/navigation/phone.svg"
               class="navbar__phone--logo"
             ></object>
-            <span class="navbar__number">+380 63 625 63 17</span></a
+            <span class="navbar__number">+38 067 362 35 23</span></a
           >
         </div>
         <div class="navbar__languages">
@@ -412,7 +412,7 @@
     <section class="ribbon">
       <div href="#" class="ribbon__logo">
         <object
-          data="./img/navigation/logo/logo.svg"
+          data="./img/navigation/logo/logo-black.svg"
           type="image/svg+xml"
           class="ribbon__logo--image"
         ></object>
@@ -530,6 +530,64 @@
         </div>
       </div>
     </section>
+    <section class="map">
+      <form class="map__form" action="/">
+        <div class="map__heading">
+          Залишити<br> відгук
+        </div>
+        <input type="text" name="mapName" id="mapName" class="map__name" placeholder="Ваше ім'я">
+        <textarea name="mapComment" id="mapComment" class="map__comment" placeholder="Відгук"></textarea>
+        <button type="submit" class="map__button">Надіслати</button>
+      </form>
+      <div class="map__row" id="mapRow">
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__row">      
+        <div class="breadcrumbs">
+          <li><a href="/">Про компанію</a></li>
+          <li><a href="/services.html">Послуги</a></li>
+          <li><a href="/gallery.html">Фотогалерея</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+          <li><a href="/contacts.html">Контакти</a></li>
+        </div>
+      <div class="footer__number">
+        <a href="tel: +380636256317" style="display: flex; align-items: center; font-size: 1.8rem; color: #fff;">
+          <object
+            type="image/svg+xml"
+            data="./img/footer/phone.svg"
+            class="footer__phone--logo"
+            style="margin-top: .3rem"
+          ></object>
+          <span class="foote__number--number" style="margin-left: .5rem">+38 067 362 35 23</span>
+        </a>
+      </div>
+    </footer> 
     <script type="text/javascript" src="./bundle.js"></script>
+    <script>
+      function initMap() {
+        const location = { lat: 50.62469, lng: 26.25447 };
+        const map = new google.maps.Map(document.getElementById("mapRow"), {
+          zoom: 7,
+          center: location,
+        });
+        const API_KEY = "AIzaSyBRzcO-IyLJ44FM0IiUOqBtxHijOuhe8Ok";
+        const marker = new google.maps.Marker({
+          position: location,
+          map: map,
+        });
+      }
+      var docWidth = document.documentElement.offsetWidth;
+
+      [].forEach.call(
+      document.querySelectorAll('*'),
+      function(el) {
+      if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRzcO-IyLJ44FM0IiUOqBtxHijOuhe8Ok&callback=initMap"></script>
   </body>
 </html>

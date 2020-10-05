@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link href="https://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div href="#" class="navbar__logo">
+        <object
+          data="./src/img/navigation/logo/logo.svg"
+          type="image/svg+xml"
+          class="navbar__logo--image"
+        ></object>
+        <div class="navbar__logo--text">
+          <a
+            href="/"
+            id="galleryLogoText"
+            class="navbar__logo--text--top"
+            style="cursor: pointer"
+            >Sverdlovyna</a
+          >
+          <span class="navbar__logo--text--bottom">буріння свердловин</span>
+        </div>
+      </div>
+      <div class="navbar__right">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Про компанію</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Послуги</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Фотогалерея</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Блог</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/contacts.html" class="navbar__link">Контакти</a>
+          </li>
+        </ul>
+        <div class="navbar__phone">
+          <a href="tel: +380673623523">
+            <object
+              type="image/svg+xml"
+              data="./src/img/navigation/phone.svg"
+              class="navbar__phone--logo"
+            ></object>
+            <span class="navbar__number">+380673623523</span></a
+          >
+        </div>
+        <div class="navbar__languages">
+          <div class="navbar__languages--container">
+            <div class="option option__ukr">
+              <input
+                type="radio"
+                class="flag flag--ukr"
+                id="ukrFlag"
+                name="ukrFlag"
+              />
+              <label for="ukrFlag">
+                <img
+                  src="./src/img/navigation/320px-Flag_of_Ukraine.svg.webp"
+                  alt=""
+                  style="width: 30px; height: 20px"
+                />
+              </label>
+            </div>
+            <div class="option">
+              <input
+                type="radio"
+                class="flag flag--ru"
+                id="ruFlag"
+                name="ruFlag"
+                class="flagLabel"
+              />
+              <label for="ruFlag">
+                <img
+                  src="./src/img/navigation/320px-Flag_of_Russia.svg.webp"
+                  alt=""
+                  style="width: 30px; height: 20px"
+                  class="flagLabel"
+                />
+              </label>
+            </div>
+          </div>
+          <svg
+            width="20"
+            height="10"
+            viewBox="0 0 7 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M1 1L3.5 4L6 1" stroke="#ABABAB" stroke-width="1.5" />
+          </svg>
+        </div>
+      </div>
+      <a href="#" class="link">
+        <div class="link__hamburger link__hamburger--1"></div>
+        <div class="link__hamburger link__hamburger--2"></div>
+        <div class="link__hamburger link__hamburger--3"></div>
+      </a>
+    </nav>
+    <div class="gallery">
+      <div class="gallery__container" id="index-gallery">
+        <div class="heading">
+          <h2 class="heading--text">Галерея</h2>
+          <span class="heading--underline"></span>
+        </div>
+        <div class="gallery__block">
+          <div class="row">
+            <div class="gallery__img img1 col-1-of-4">
+              <div><a href="#">This is a title</a></div>
+            </div>
+            <div class="gallery__img img2 col-1-of-4">
+              <div><a href="#">This is a title</a></div>
+            </div>
+            <div class="gallery__img img3 col-1-of-4">
+              <div><a href="#">This is a title</a></div>
+            </div>
+            <div class="gallery__img img4 col-1-of-4">
+              <div><a href="#">This is a title</a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="gallery__img img5 col-1-of-4">
+              <div><a href="#">This is a title</a></div>
+            </div>
+            <div class="gallery__img img6 col-1-of-4">
+              <div><a href="#">This is a title</a></div>
+            </div>
+            <div class="gallery__img img7 col-1-of-4">
+              <div><a href="#">This is a title</a></div>
+            </div>
+            <div class="gallery__img img7 col-1-of-4">
+              <div><a href="#">This is a title</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+    <!--     <script>
+      function initMap() {
+        const location = { lat: 50.62469, lng: 26.25447 };
+        const map = new google.maps.Map(document.getElementById("mapRow"), {
+          zoom: 7,
+          center: location,
+        });
+        const API_KEY = "AIzaSyBRzcO-IyLJ44FM0IiUOqBtxHijOuhe8Ok";
+        const marker = new google.maps.Marker({
+          position: location,
+          map: map,
+        });
+      }
+      var docWidth = document.documentElement.offsetWidth;
+
+      [].forEach.call(document.querySelectorAll("*"), function (el) {
+        if (el.offsetWidth > docWidth) {
+          console.log(el);
+        }
+      });
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRzcO-IyLJ44FM0IiUOqBtxHijOuhe8Ok&callback=initMap"
+    ></script> -->
+  </body>
+</html>
