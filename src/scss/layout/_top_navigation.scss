@@ -185,6 +185,7 @@
     height: 100%;
     transition: 0.3s all;
     padding: 0 1em;
+    font-family: Roboto;
 
     &:hover {
       cursor: pointer;
@@ -305,6 +306,11 @@
     .navbar__logo {
       margin-top: 0.2rem;
       margin-left: 3rem;
+
+      @include respond(tab-land) {
+        margin-left: 1.2rem;
+        transform: scale(0.8);
+      }
 
       @include respond(tab-port) {
         margin-left: 0.5rem;

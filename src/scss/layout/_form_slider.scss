@@ -392,3 +392,77 @@
     }
   }
 }
+
+#drillingBackground {
+  background-image: url("../img/drilling/Rectangle 40.png");
+}
+
+#formName::-webkit-input-placeholder {
+  font-family: $main-font;
+  color: #eee;
+}
+
+#formName::-moz-placeholder {
+  font-family: $main-font;
+  color: #eee;
+}
+
+#formName:-ms-input-placeholder {
+  font-family: $main-font;
+  color: #eee;
+}
+
+#formName::-ms-input-placeholder {
+  font-family: $main-font;
+  color: #eee;
+}
+
+#formName::placeholder {
+  font-family: $main-font;
+  color: #eee;
+}
+
+#formNumber::-webkit-input-placeholder {
+  font-family: $main-font;
+  color: #eee;
+}
+
+#formNumber::-moz-placeholder {
+  font-family: $main-font;
+  color: #eee;
+}
+
+#formNumber:-ms-input-placeholder {
+  font-family: $main-font;
+  color: #eee;
+}
+
+#formNumber::-ms-input-placeholder {
+  font-family: $main-font;
+  color: #eee;
+}
+
+#formNumber::placeholder {
+  font-family: $main-font;
+  color: #eee;
+}
+
+#formEmail::-webkit-input-placeholder {
+  color: #eee;
+}
+
+#formEmail::-moz-placeholder {
+  color: #eee;
+}
+
+#formEmail:-ms-input-placeholder {
+  color: #eee;
+}
+
+#formEmail::-ms-input-placeholder {
+  color: #eee;
+}
+
+#formEmail::placeholder {
+  color: #eee;
+}

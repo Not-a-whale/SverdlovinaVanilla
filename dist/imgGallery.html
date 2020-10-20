@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Gallery</title>
     <link href="https://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet" />
-    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <nav class="navbar">
       <div href="#" class="navbar__logo">
         <object
-          data="./src/img/navigation/logo/logo.svg"
+          data="./img/navigation/logo/logo.svg"
           type="image/svg+xml"
           class="navbar__logo--image"
         ></object>
@@ -34,16 +39,16 @@
       <div class="navbar__right">
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Про компанію</a>
+            <a href="/" class="navbar__link">Про компанію</a>
           </li>
           <li class="navbar__item">
             <a href="#" class="navbar__link">Послуги</a>
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Фотогалерея</a>
+            <a href="/imgGallery.html" class="navbar__link">Фотогалерея</a>
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Блог</a>
+            <a href="/" class="navbar__link">Блог</a>
           </li>
           <li class="navbar__item">
             <a href="/contacts.html" class="navbar__link">Контакти</a>
@@ -70,7 +75,7 @@
               />
               <label for="ukrFlag">
                 <img
-                  src="./src/img/navigation/320px-Flag_of_Ukraine.svg.webp"
+                  src="./img/navigation/320px-Flag_of_Ukraine.svg.webp"
                   alt=""
                   style="width: 30px; height: 20px"
                 />
@@ -86,7 +91,7 @@
               />
               <label for="ruFlag">
                 <img
-                  src="./src/img/navigation/320px-Flag_of_Russia.svg.webp"
+                  src="./img/navigation/320px-Flag_of_Russia.svg.webp"
                   alt=""
                   style="width: 30px; height: 20px"
                   class="flagLabel"
@@ -170,6 +175,32 @@
         </a>
       </div>
     </footer> 
-    <script type="text/javascript" src="dist/bundle.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
+    <!--     <script>
+      function initMap() {
+        const location = { lat: 50.62469, lng: 26.25447 };
+        const map = new google.maps.Map(document.getElementById("mapRow"), {
+          zoom: 7,
+          center: location,
+        });
+        const API_KEY = "AIzaSyBRzcO-IyLJ44FM0IiUOqBtxHijOuhe8Ok";
+        const marker = new google.maps.Marker({
+          position: location,
+          map: map,
+        });
+      }
+      var docWidth = document.documentElement.offsetWidth;
+
+      [].forEach.call(document.querySelectorAll("*"), function (el) {
+        if (el.offsetWidth > docWidth) {
+          console.log(el);
+        }
+      });
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRzcO-IyLJ44FM0IiUOqBtxHijOuhe8Ok&callback=initMap"
+    ></script> -->
   </body>
 </html>

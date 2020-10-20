@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Буріння</title>
+    <link href="https://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div href="#" class="navbar__logo">
+        <object
+          data="./src/img/navigation/logo/logo.svg"
+          type="image/svg+xml"
+          class="navbar__logo--image"
+        ></object>
+        <div class="navbar__logo--text">
+          <a href="/" class="navbar__logo--text--top" style="cursor: pointer"
+            >Sverdlovyna</a
+          >
+          <span class="navbar__logo--text--bottom">буріння свердловин</span>
+        </div>
+      </div>
+      <div class="navbar__right">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link" style="font-family: Roboto"
+              >Про компанію</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link" style="font-family: 'Roboto'"
+              >Послуги</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link" style="font-family: Roboto"
+              >Фотогалерея</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link" style="font-family: Roboto"
+              >Блог</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a
+              href="/contacts.html"
+              class="navbar__link"
+              style="font-family: Roboto"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+        <div class="navbar__phone">
+          <a href="tel: +380673623523">
+            <object
+              type="image/svg+xml"
+              data="./src/img/navigation/phone.svg"
+              class="navbar__phone--logo"
+            ></object>
+            <span class="navbar__number">+380673623523</span></a
+          >
+        </div>
+        <div class="navbar__languages">
+          <div class="navbar__languages--container">
+            <div class="option option__ukr">
+              <input
+                type="radio"
+                class="flag flag--ukr"
+                id="ukrFlag"
+                name="ukrFlag"
+              />
+              <label for="ukrFlag">
+                <img
+                  src="./src/img/navigation/320px-Flag_of_Ukraine.svg.webp"
+                  alt=""
+                  style="width: 30px; height: 20px"
+                />
+              </label>
+            </div>
+            <div class="option">
+              <input
+                type="radio"
+                class="flag flag--ru"
+                id="ruFlag"
+                name="ruFlag"
+                class="flagLabel"
+              />
+              <label for="ruFlag">
+                <img
+                  src="./src/img/navigation/320px-Flag_of_Russia.svg.webp"
+                  alt=""
+                  style="width: 30px; height: 20px"
+                  class="flagLabel"
+                />
+              </label>
+            </div>
+          </div>
+          <svg
+            width="20"
+            height="10"
+            viewBox="0 0 7 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M1 1L3.5 4L6 1" stroke="#ABABAB" stroke-width="1.5" />
+          </svg>
+        </div>
+      </div>
+      <a href="#" class="link">
+        <div class="link__hamburger link__hamburger--1"></div>
+        <div class="link__hamburger link__hamburger--2"></div>
+        <div class="link__hamburger link__hamburger--3"></div>
+      </a>
+    </nav>
+    <section class="form-slider">
+      <div class="slider" id="drillingSlider">
+        <div
+          class="slider__slide slider__slide-1 active-slide"
+          id="drillingBackground"
+        ></div>
+        <div class="slider__slide slider__slide-2"></div>
+        <div class="slider__slide slider__slide-3"></div>
+      </div>
+      <div class="content">
+        <div class="content__text">
+          <h1 class="content__header">
+            Буріння свердловин <br class="br-1" />
+            на воду <br class="br-2" />
+            будь-якої <br class="br-3" />
+            складності
+          </h1>
+          <h2 class="content__description">
+            В Рівненській, Хмельницькій та Волинскій областях.
+          </h2>
+          <button class="content__button">Більше</button>
+        </div>
+        <form action="#" class="content__form">
+          <div class="content__form--heading">
+            Замовити<br />
+            консультацію
+          </div>
+          <input
+            type="text"
+            name="name"
+            id="formName"
+            class="content__form--name"
+            placeholder="Ваше ім'я"
+          />
+          <input
+            type="text"
+            name="phone"
+            id="formNumber"
+            class="content__form--number"
+            placeholder="Номер телефону"
+          />
+          <input
+            type="email"
+            name="email"
+            id="formEmail"
+            class="content__form--email"
+            placeholder="E-mail"
+          />
+          <button type="submit" class="content__form--button" id="formButton">
+            Надіслати заявку
+          </button>
+        </form>
+      </div>
+      <div class="arrow arrow__left" id="arrowLeft">
+        <div class="arrow--img arrow--img--left"></div>
+      </div>
+      <div class="arrow arrow__right turn-right" id="arrowRight">
+        <div class="arrow--img arrow--img--right"></div>
+      </div>
+      <div class="numbers">
+        <span class="numbers__number numbers__number--1 numbers__number-active"
+          >01</span
+        >
+        <span class="numbers__line numbers__line--1"></span>
+        <span class="numbers__number numbers__number--2">02</span>
+        <span class="numbers__line numbers__line--2 second"></span>
+        <span class="numbers__number numbers__number--3">03</span>
+      </div>
+    </section>
+    <section class="drilling">
+      <article class="drilling__cards">
+        <div class="drilling__ribbon">
+          <h2 class="drilling__heading">Буріння свердловин</h2>
+        </div>
+        <ul class="breadcrumbs">
+          <li><a href="./index.html">Головна</a></li>
+          <li><a href="./contacts.html">Зв'язатися з нами</a></li>
+        </ul>
+        <div class="drilling__card card">
+          <div class="drilling__card--badge card__badge"></div>
+          <div class="drilling__text card__text">
+            <h3 class="drilling__text--heading card__text--heading">
+              Цікавить буріння свердловин?
+            </h3>
+            <p class="drilling__text--text card__text--text">
+              Компанія
+              <a href="./index.html" class="main-link card__main-link"
+                >«Свердловина»</a
+              >
+              понад 15 років працює в цьому напрямку. За цей час ми змогли
+              виробити тактику, яка дозволяє виконати бурові роботи на ділянках
+              будь-якої складності.
+            </p>
+          </div>
+          <div class="drilling__image card__image">
+            <img src="./src//img/drilling/drop.svg" alt="drop image" />
+            <img
+              src="./src/img/drilling/blick.svg"
+              alt="blick img"
+              class="blick"
+            />
+          </div>
+        </div>
+        <div class="drilling__card card">
+          <div class="drilling__card--badge card__badge"></div>
+          <div class="drilling__text card__text">
+            <p class="drilling__text--text card__text--text">
+              Технологічно складний процес вимагає професійного підходу і
+              комплексної підготовки. Для успішної його реалізації наші інженери
+              і бурильники використовують високопродуктивне обладнання
+              підвищеної надійності.
+            </p>
+          </div>
+          <div class="drilling__image card__image" id="text">
+            <img src="./src//img/drilling/drill.svg" alt="drill image" />
+          </div>
+        </div>
+        <div class="drilling__waves">
+          <img
+            src="https://media.giphy.com/media/JXHhI4o9NCf8k/giphy.gif"
+            alt="waves background"
+            class="drilling__backgroud-image"
+          />
+        </div>
+      </article>
+      <article class="drilling__description">
+        <div class="drilling__description--heading">
+          <h2>Особливості бурильних робіт</h2>
+        </div>
+        <div class="drilling__description--band band">
+          <div class="drilling__description--block--text band__text">
+            <p
+              class="drilling__description--block--text--text band__text--text"
+            >
+              Наша компанія виконує
+              <a href="" class="">буріння під свердловину</a> під будь-який тип
+              подальшого її використання. У пробурений шурф в подальшому можуть
+              встановлюватися палі або обладнання для водопостачання (насоси,
+              труби).
+            </p>
+          </div>
+          <div class="drilling__description--block--image band__image">
+            <img
+              src="./src/img/drilling/1-64 1.png"
+              alt=""
+              class="band__image--img"
+            />
+          </div>
+        </div>
+        <div class="drilling__description--card card card--reverse">
+          <div class="drilling__description--card--badge card__badge"></div>
+          <div class="drilling__description--text card__text card__text">
+            <p class="drilling__description--text--text card__text--text">
+              Секрет успішного вирішення питання полягає в правильному підході.
+              Перш, ніж приступити до реалізації розробленого проекту, наші
+              інженери проводять розвідувальні роботи. На допомогу приходять
+              карта залягання води і результати гірничо-геологічних досліджень
+              регіону. Ми спираємося як на інформацію досвідчених дослідників,
+              так і на свої дані. За 15 років нами виконані бурильні роботи по
+              всіх регіонах Західної України, що дозволило отримати великий
+              обсяг інформації.
+            </p>
+          </div>
+          <div class="drilling__description--image card__image">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 250 194"
+              style="enable-background: new 0 0 250 194"
+              xml:space="preserve"
+            >
+              <defs>
+                <clipPath id="shape">
+                  <path
+                    class="st0"
+                    d="M147.6,136.9v24.2H95.7V87H0v79h87.6h8.1h56.8v-29.1H147.6z M90.8,91.9V102h-86V91.9H90.8z M87.6,161.1H4.9
+      v-54.7h86v54.7H87.6z"
+                  />
+                  <rect x="20" y="113.1" class="st0" width="56" height="4.5" />
+                  <rect x="20" y="124.3" class="st0" width="56" height="4.5" />
+                  <rect x="20" y="135.4" class="st0" width="56" height="4.5" />
+                  <rect x="20" y="146.5" class="st0" width="56" height="4.5" />
+                  <path
+                    class="st0"
+                    d="M27.5,60.5c-6.6,0-12-5.4-12-12s5.4-12,12-12s12,5.4,12,12S34.1,60.5,27.5,60.5z M27.5,41.5c-3.9,0-7,3.1-7,7
+      s3.1,7,7,7s7-3.1,7-7S31.4,41.5,27.5,41.5z"
+                  />
+                  <path
+                    class="st0"
+                    d="M54.2,82.2c-5.5,0-10-4.5-10-10s4.5-10,10-10s10,4.5,10,10S59.8,82.2,54.2,82.2z M54.2,66.2c-3.3,0-6,2.7-6,6
+      s2.7,6,6,6s6-2.7,6-6S57.6,66.2,54.2,66.2z"
+                  />
+                  <path
+                    class="st0"
+                    d="M186,158c-5.5,0-10-4.5-10-10s4.5-10,10-10s10,4.5,10,10S191.5,158,186,158z M186,142c-3.3,0-6,2.7-6,6
+      s2.7,6,6,6s6-2.7,6-6S189.3,142,186,142z"
+                  />
+                  <path
+                    class="st0"
+                    d="M79,65c-9.9,0-18-8.1-18-18s8.1-18,18-18s18,8.1,18,18S88.9,65,79,65z M79,35c-6.6,0-12,5.4-12,12s5.4,12,12,12
+      s12-5.4,12-12S85.6,35,79,35z"
+                  />
+                  <circle class="st0" cx="81.5" cy="48.5" r="5.5" />
+                  <circle class="st0" cx="127.5" cy="146.5" r="5.5" />
+                  <circle class="st0" cx="230.5" cy="47.5" r="10.5" />
+                  <path
+                    class="st0"
+                    d="M182.8,70.7c-5.6-9.6-20.9-12.6-31.1-14.6c-1.1-0.2-2.1-0.4-3.1-0.6c-2-0.4-3.3-0.9-4.2-1.2
+      c-1.2-0.4-5.2-3.2-6.7-2c-1.5,1.3,0.8,3.9,1.2,5.9c0.4,2,0.6,2.9,0.7,4.8c0.1,1.2,0,3.1,0,5.4c-0.3,9.2-1,23.3,7.3,30.3
+      c5.6,4.7,15.1,6.5,25.2,0.6c2.7-1.6,5-5.1,1.1-9.4s-8.1-9.5-10.7-12.1c-1-1-4-3.1-5.5-1.9c-1.5,1.2,0.1,4.4,1.2,5.9
+      c2.8,3.5,10,11.9,9.7,12.3c-1.5,2.4-11.1,5.4-17.1,0.2c-6-5.3-5.5-18-5.2-25.6c0.1-2.4,0.2-4.5,0-6.1c0-0.6-0.1-1.2-0.2-1.7
+      c0.6,0.1,1.2,0.3,1.9,0.4c1,0.2,2,0.4,3.2,0.6c9.1,1.8,22.8,4.5,27,11.7c1.6,2.8,0.7,11.3,1.1,13c0.6,2.9,3.8,3.3,5.4,1.2
+      C185.8,85.8,185.4,75,182.8,70.7z"
+                  />
+
+                  <path
+                    class="st0"
+                    d="M247.7,145.7l-6.2-6.2l-18,18l6.2,6.2c3.1,3.1,8.1,3.1,11.1,0l6.9-6.9C250.8,153.8,250.8,148.8,247.7,145.7z"
+                  />
+
+                  <rect
+                    x="209.7"
+                    y="129.8"
+                    transform="matrix(0.7071 -0.7071 0.7071 0.7071 -32.7422 197.8406)"
+                    class="st0"
+                    width="25.4"
+                    height="17.2"
+                  />
+                  <path
+                    class="st0"
+                    d="M216.3,114.3c-2.5-2.5-6.4-3-9.4-1.3l-7.9-7.9c6-8.3,9.6-18.5,9.6-29.6c0-27.9-22.6-50.5-50.5-50.5
+        s-50.5,22.6-50.5,50.5c0,27.9,22.6,50.5,50.5,50.5c11.8,0,22.7-4.1,31.3-10.9l7.7,7.7c-1.6,3-1.2,6.8,1.3,9.3l4.3,4.3l18-18
+        L216.3,114.3z M118,75.5c0-22.1,17.9-39.9,39.9-39.9s39.9,17.9,39.9,39.9S180,115.5,158,115.5S118,97.6,118,75.5z"
+                  />
+
+                  <path
+                    class="st0"
+                    d="M120.5,125H116v-4.5c0-1.4-1.1-2.5-2.5-2.5s-2.5,1.1-2.5,2.5v4.5h-4.5c-1.4,0-2.5,1.1-2.5,2.5s1.1,2.5,2.5,2.5
+      h4.5v4.5c0,1.4,1.1,2.5,2.5,2.5s2.5-1.1,2.5-2.5V130h4.5c1.4,0,2.5-1.1,2.5-2.5S121.9,125,120.5,125z"
+                  />
+                  <path
+                    class="st0"
+                    d="M247.2,93.7h-6.9v-6.9c0-1.4-1.2-2.6-2.6-2.6h-1.8c-1.4,0-2.6,1.2-2.6,2.6v6.9h-6.9c-1.4,0-2.6,1.2-2.6,2.6v1.8
+      c0,1.4,1.2,2.6,2.6,2.6h6.9v6.9c0,1.4,1.2,2.6,2.6,2.6h1.8c1.4,0,2.6-1.2,2.6-2.6v-6.9h6.9c1.4,0,2.6-1.2,2.6-2.6v-1.8
+      C249.8,94.9,248.6,93.7,247.2,93.7z"
+                  />
+                </clipPath>
+              </defs>
+              <image
+                clip-path="url(#shape)"
+                xlink:href="https://media.giphy.com/media/JXHhI4o9NCf8k/giphy.gif"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="drilling__description--content">
+          <p class="drilling__description--content--top">
+            Оцінивши особливості ґрунту, приступаємо до реалізації замовлення в
+            реальних умовах. Ми пропонуємо буріння свердловин під ключ як один з
+            найбільш ефективних і швидких варіантів виконання замовлення. Для
+            виканання заказу використовуємо бурильне обладнання БГМ-1 на ЗІЛ
+            131, УРБ-2.5 на базі КАМАЗ 4310 и аналоги. Устаткування добре
+            зарекомендувало себе на практиці.
+          </p>
+          <p class="drilling__description--content--bottom">
+            Ми виконуємо бурильні роботи на відстані мінімум 3 метра від
+            житлових і господарських будівель. Це дозволяє використовувати
+            потужне обладнання без побоювання пошкодити фундамент або каркас
+            будівлі.
+          </p>
+        </div>
+      </article>
+      <article class="images-block">
+        <img src="./src/img/drilling/Rectangle 104.png" alt="img 1" />
+        <img src="./src/img/drilling/Rectangle 105.png" alt="img 1" />
+        <img src="./src/img/drilling/Rectangle 106.png" alt="img 1" />
+        <img src="./src/img/drilling/Rectangle 107.png" alt="img 1" />
+      </article>
+      <article class="drilling__price">
+        <div class="drilling__price--heading">Цена бурильных работ</div>
+        <div class="drilling__price--text-top drilling__price--text-top">
+          <div class="drilling__price--text-badge"></div>
+          <p>
+            <b>Бурение под скважину, цена</b> – комплексный показатель. Он
+            зависит от трудоемкости услуги и особенностей использования
+            оборудования. Яркий пример: пробурить скальную породу сложнее, чем
+            песчаник или известняк.
+          </p>
+        </div>
+        <div class="drilling__price--main boxes">
+          <div class="drilling__price--main-left boxes__left">
+            <div class="drilling__price--main-badge boxes__badge"></div>
+            <p>
+              Перед тем, как приступить к выполнению заказа, наши инженеры
+              детально просчитывают смету. В документе указан весь объем работ и
+              стоимость каждого этапа. Смета, составленная таким образом,
+              позволит контролировать расходы. Мы предлагаем выгодные условия
+              сотрудничества, потому у нас нет скрытых платежей, завышенных
+              расценок и подобных уловок, используемых для намеренного завышения
+              цены бурения.
+            </p>
+          </div>
+          <div class="drilling__price--main-right boxes__right">
+            <div class="drilling__price--main-badge boxes__badge"></div>
+            <p>
+              В нашей компании работают знатоки своего дела. Обширная база
+              знаний и практическое мышление помогают найти оптимальное решение
+              в любой ситуации. Мы успешно справляемся со сложными и
+              нестандартными случаями, добиваясь показательного результата.
+            </p>
+          </div>
+        </div>
+        <p class="drilling__price--text-bottom">
+          Вас интересует выполнение заказа с использованием
+          высокопроизводительного оборудования?
+          <b>Обращайтесь в компанию «Свердловина».</b> Мы постоянно работаем на
+          территории Западной Украины, но заинтересованы в расширении географии.
+        </p>
+        <div class="drilling__price--underlining">
+          <div class="drilling__price--underlining-container">
+            <svg
+              width="114"
+              height="114"
+              viewBox="0 0 114 114"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M59.5604 113.421C41.0577 110.571 15.2964 88.7731 4.58663 66.9082C2.87217 63.4125 1.73663 60.4067 0.823736 57C0.200299 54.6621 0.133502 54.1278 0.133502 50.7657C0.111236 47.2254 0.133502 47.0473 0.712408 45.8004C1.42491 44.2641 4.67569 40.6571 7.10264 38.72C10.1308 36.2485 12.4019 35.5137 14.9179 36.1594C15.6526 36.3598 16.7437 36.7828 17.3226 37.1168C18.6808 37.9184 21.3972 40.6348 22.9558 42.75C26.4069 47.4481 27.5647 50.6321 26.83 53.5043C26.3847 55.2856 25.4718 56.6215 22.8667 59.3825C20.5065 61.8762 20.2839 62.3661 20.7069 64.2364C21.4417 67.5094 24.9374 72.4301 31.105 78.8204C40.6124 88.7063 48.0491 93.8497 51.5448 92.9813C51.8565 92.8922 53.2147 91.8012 54.5507 90.5321C55.9979 89.1516 57.512 87.9493 58.3581 87.504C61.787 85.6782 65.5054 86.6579 71.0495 90.8438C77.796 95.8981 79.3101 100.262 76.0147 105.25C74.7679 107.12 69.6022 112.107 68.244 112.775C66.1956 113.777 63.2343 114 59.5604 113.421ZM63.2343 109.436C65.5276 108.834 67.2198 107.788 69.3128 105.695C70.3815 104.604 71.2276 103.602 71.1831 103.468C71.094 103.201 65.9284 100.218 65.5499 100.195C65.4163 100.195 65.1714 100.618 65.0155 101.153C64.2808 103.669 62.878 105.472 60.9409 106.407C59.0929 107.32 57.3339 107.632 54.8401 107.454C53.7046 107.387 52.7694 107.387 52.7694 107.454C52.7694 107.521 53.4374 107.877 54.2612 108.256C57.4229 109.681 60.696 110.104 63.2343 109.436ZM7.34756 59.7832C6.70186 56.7774 6.92452 53.3707 7.88194 51.4559C8.72803 49.8082 9.99717 48.8508 12.6023 47.8489L13.9605 47.3368L12.1792 44.5536C11.1773 43.0172 10.3534 41.7036 10.3089 41.659C10.2198 41.5254 7.99327 43.6184 6.94678 44.843C4.36397 47.8934 3.696 51.3446 4.94288 55.4414C5.36592 56.7996 7.3253 60.8965 7.48116 60.7407C7.50342 60.6961 7.45889 60.2731 7.34756 59.7832Z"
+                fill="url(#paint0_linear)"
+              />
+              <path
+                d="M52.1906 62.4328C54.6621 59.4715 56.5769 55.7977 57.6457 51.9457L58.0687 50.3649L56.6437 49.4297C48.2273 43.9746 43.3734 35.3356 43.9523 26.7188C44.6425 15.9867 52.9254 6.61291 65.3941 2.44924C72.7863 2.12193e-05 80.3343 -0.40076 88.2386 1.2469C91.4894 1.93713 93.9832 2.78322 97.234 4.34182C100.796 6.03401 103.468 7.92658 106.341 10.7988C109.948 14.3613 111.885 17.5008 113.265 21.9762C113.822 23.802 113.866 24.2028 113.866 28.0547C113.866 31.9067 113.822 32.3074 113.265 34.1332C111.885 38.6086 109.948 41.7703 106.341 45.3106C101.019 50.6098 94.5398 53.816 86.3015 55.2188C82.9617 55.7754 78.375 55.9981 75.614 55.6863L73.4097 55.4637L72.2742 56.4879C67.9992 60.3399 61.3863 62.9449 53.4375 63.9024C50.5207 64.2586 50.5875 64.3254 52.1906 62.4328ZM64.9488 32.8863C65.3273 32.686 65.973 32.1961 66.3515 31.7953C69.5133 28.6559 67.5984 23.2231 63.1898 22.7778C61.4754 22.5996 60.2508 23.0227 59.0039 24.1805C57.4008 25.6946 56.8664 27.5871 57.4898 29.6578C57.8461 30.8824 59.4715 32.6192 60.6293 33.0422C61.7648 33.4653 63.9691 33.3762 64.9488 32.8863ZM80.6238 33.1313C81.7593 32.7973 83.1621 31.5949 83.7633 30.4149C84.4535 29.1457 84.4535 26.9637 83.7633 25.6946C81.8261 21.9762 76.6605 21.7313 74.5008 25.2492C73.7437 26.4739 73.4765 28.3887 73.8996 29.6801C74.8347 32.4856 77.7738 33.9996 80.6238 33.1313ZM97.7683 32.7973C101.732 30.7711 101.732 25.3383 97.7683 23.3344C94.7402 21.7981 91.2222 23.3789 90.2426 26.6965C89.9531 27.7207 89.9531 28.0992 90.1758 29.1012C90.7101 31.5281 92.9812 33.3985 95.4082 33.3985C96.2097 33.3985 96.9 33.2203 97.7683 32.7973Z"
+                fill="url(#paint1_linear)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear"
+                  x1="38.9099"
+                  y1="35.9373"
+                  x2="38.9099"
+                  y2="113.736"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#45D3FE" />
+                  <stop offset="1" stop-color="#2674CC" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear"
+                  x1="78.8861"
+                  y1="0.25293"
+                  x2="78.8861"
+                  y2="64.1007"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#45D3FE" />
+                  <stop offset="1" stop-color="#2674CC" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p>
+              Оставьте заявку на сайте или позвоните по контактным номерам
+              телефонов, указанным на главной странице. Наши менеджеры
+              проконсультируют по всем вопросам.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+  </body>
+</html>

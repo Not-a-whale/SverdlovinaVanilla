@@ -13,11 +13,11 @@ module.exports = {
         use: [miniCss.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|jpg)$/,
-        use: "file-loader",
+        test: /\.(ttf|eot|svg|jpg|png)(\?[\s\S]+)?$/,
+        loader: "file-loader?name=[name].[ext]",
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        test: /\.(|woff|woff2|eot|ttf|svg)$/,
         loader: "url-loader?limit=100000",
       },
     ],

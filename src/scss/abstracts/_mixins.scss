@@ -89,3 +89,104 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
   }
 }
+
+@mixin card() {
+  .card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 50%;
+    background: #ffffff;
+    box-shadow: 22px 22px 100px #226bbd;
+    border-radius: 2px;
+    padding: 4rem;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+
+    @include respond(tab-land) {
+      width: 75%;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    @include respond(phone) {
+      width: 70%;
+    }
+    &__badge {
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      width: 2.6rem;
+      height: 2.6rem;
+      background: linear-gradient(156.04deg, #45d3fe 21.25%, #2674cc 145.6%);
+      border-radius: 50%;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+
+      @include respond(tab-land) {
+        width: 60%;
+      }
+
+      @include respond(tab-port) {
+        width: 90%;
+        margin-bottom: 4rem;
+      }
+
+      @include respond(phone) {
+        width: 98%;
+      }
+
+      &--heading {
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        font-family: $main-font;
+        text-align: left;
+        margin-bottom: 2rem;
+
+        @include respond(tab-port) {
+          text-align: center;
+        }
+      }
+      &--text {
+        font-size: 2.2rem;
+        line-height: 2.9rem;
+        font-family: $main-font;
+        font-weight: 300;
+        .card__main-link {
+        }
+      }
+    }
+    &__image {
+      position: relative;
+      width: 21.5rem;
+      height: 21.5rem;
+      border-radius: 50%;
+      background: linear-gradient(3.41deg, #2674cc -4.19%, #45d3fe 100.1%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img.blick {
+        position: absolute;
+        bottom: 27%;
+        right: 35%;
+      }
+      &#text {
+        background: linear-gradient(
+          3.41deg,
+          rgba(38, 116, 204, 0.3234) -4.19%,
+          rgba(69, 211, 254, 0.0588) 100.1%
+        );
+      }
+    }
+  }
+}
