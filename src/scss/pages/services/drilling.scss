@@ -60,7 +60,7 @@
     justify-content: center;
     align-items: center;
     &--heading {
-      min-height: 12rem;
+      min-height: 8rem;
       width: 100%;
       display: flex;
       align-items: center;
@@ -72,6 +72,7 @@
       background: linear-gradient(88.9deg, #45d3fe 40.95%, #2674cc 95.89%);
       h2 {
         text-align: center;
+        font-size: 5rem;
       }
     }
     &--band {
@@ -161,7 +162,135 @@
   &__price {
     background: url("./../img/drilling/background.png");
     background-size: cover;
-    height: 100vh;
     width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &--heading {
+      color: #ffffff;
+      font-size: 5rem;
+      font-family: $main-font;
+      text-transform: uppercase;
+      text-align: center;
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
+
+      @include respond(phone) {
+        font-size: 2.5rem;
+      }
+    }
+
+    &--text {
+      position: relative;
+      font-size: 2.2rem;
+      line-height: 3.9rem;
+      font-family: $main-font;
+      font-weight: 300;
+      color: $white-color;
+      width: 40%;
+      margin-top: 8rem;
+      margin-left: -15%;
+
+      &-bottom {
+        position: relative;
+        font-size: 2.2rem;
+        line-height: 3.9rem;
+        font-family: $main-font;
+        font-weight: 300;
+        color: $white-color;
+        width: 40%;
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+      }
+
+      &-badge {
+        position: absolute;
+        top: 0;
+        left: -10%;
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 50%;
+        background-color: $white-color;
+      }
+    }
+
+    &--main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10rem;
+      width: 90%;
+      position: relative;
+
+      &-left {
+        width: 45%;
+        background: linear-gradient(141.46deg, #21b4fa 17.53%, #0f59c0 96.56%);
+        box-shadow: 22px 22px 100px #226bbd;
+        padding: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+      }
+
+      &-badge {
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        background: #fff;
+        border-radius: 50%;
+        top: 20px;
+        left: 20px;
+      }
+
+      &-right {
+        width: 45%;
+        position: relative;
+        background: linear-gradient(141.46deg, #21b4fa 17.53%, #0f59c0 96.56%);
+        box-shadow: 22px 22px 100px #226bbd;
+        padding: 55px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        transform: translate(20px, -72px);
+      }
+
+      p {
+        font-size: 2.2rem;
+        line-height: 3.9rem;
+        font-family: $main-font;
+        font-weight: 300;
+        color: $white-color;
+        width: 80%;
+      }
+    }
+
+    &--underlining {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 7rem;
+        width: 50%;
+        svg {
+        }
+
+        p {
+          font-size: 2.2rem;
+          line-height: 3.9rem;
+          font-family: $main-font;
+          font-weight: 300;
+          color: $font-color;
+          width: 80%;
+        }
+      }
+    }
   }
 }
