@@ -15,4 +15,5 @@ link.addEventListener("click", function () {
   plank1.classList.toggle("list-active-plank-1");
   plank2.classList.toggle("list-active-plank-2");
   plank3.classList.toggle("list-active-plank-3");
+  console.log(rightPart.classList);
 });
