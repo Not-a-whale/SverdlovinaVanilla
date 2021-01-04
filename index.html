@@ -21,7 +21,7 @@
           class="navbar__logo--image"
         ></object>
         <div class="navbar__logo--text">
-          <span class="navbar__logo--text--top">Sverdlovyna</span>
+          <span class="navbar__logo--text--top">Свердловина</span>
           <span class="navbar__logo--text--bottom">буріння свердловин</span>
         </div>
       </div>
@@ -124,7 +124,7 @@
           </h2>
           <button class="content__button">Більше</button>
         </div>
-        <form action="#" class="content__form">
+        <form action="https://formspree.io/f/mzbkkvgg" class="content__form form" method="POST">
           <div class="content__form--heading">
             Замовити<br />
             консультацію
@@ -133,24 +133,24 @@
             type="text"
             name="name"
             id="formName"
-            class="content__form--name"
+            class="content__form--name form__input"
             placeholder="Ваше ім'я"
           />
           <input
             type="text"
             name="phone"
             id="formNumber"
-            class="content__form--number"
+            class="content__form--number form__input"
             placeholder="Номер телефону"
           />
           <input
             type="email"
             name="email"
             id="formEmail"
-            class="content__form--email"
+            class="content__form--email form__input"
             placeholder="E-mail"
           />
-          <button type="submit" class="content__form--button" id="formButton">
+          <button type="submit" class="content__form--button form__button" id="formButton">
             Надіслати заявку
           </button>
         </form>
@@ -236,7 +236,7 @@
           </a>
         </div>
         <div class="col-1-of-4">
-          <a href="#" class="services__link">
+          <a href="./watter-drilling.html" class="services__link">
             <div class="services__image">
               <img
                 src="./src/img/services/water-drilling.png"
@@ -418,7 +418,7 @@
           class="ribbon__logo--image"
         ></object>
         <div class="ribbon__logo--text">
-          <span class="ribbon__logo--text--top">Sverdlovyna</span>
+          <span class="ribbon__logo--text--top">Свердловина</span>
           <span class="ribbon__logo--text--bottom">буріння свердловин</span>
         </div>
       </div>
@@ -433,7 +433,7 @@
             </p>
          </div>
         </article>
-        <button class="ribbon__button" id="ribbonRequest">Замовити консультацію</button>
+        <button class="ribbon__button" id="orderConsultation">Замовити консультацію</button>
       </div>
     </section>
     <section class="testimonials">
@@ -532,13 +532,13 @@
       </div>
     </section>
     <section class="map">
-      <form class="map__form" action="/">
+      <form class="map__form form" action="https://formspree.io/f/mzbkkvgg" method="POST">
         <div class="map__heading">
           Залишити<br> відгук
         </div>
-        <input type="text" name="mapName" id="mapName" class="map__name" placeholder="Ваше ім'я">
-        <textarea name="mapComment" id="mapComment" class="map__comment" placeholder="Відгук"></textarea>
-        <button type="submit" class="map__button">Надіслати</button>
+        <input type="text" name="mapName" id="mapName" class="map__name form__input" placeholder="Ваше ім'я">
+        <textarea name="mapComment" id="mapComment" class="map__comment form__input" placeholder="Відгук"></textarea>
+        <button type="submit" class="map__button form__button">Надіслати</button>
       </form>
       <div class="map__row" id="mapRow">
       </div>
@@ -564,6 +564,172 @@
         </a>
       </div>
     </footer> 
+    <div class="backdrop-sent backdrop" id="backdropSent">
+      <div class="modal modal--sent" id="modalSent">
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="modalSentCrosses"
+        >
+          <path
+            d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+            fill="white"
+          />
+        </svg>
+
+        <div class="modal__picture">
+          <svg
+            width="47"
+            height="38"
+            viewBox="0 0 47 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M46.959 27.4167L36.5423 37.8334L29.2507 30.5417L32.3757 27.4167L36.5423 31.5834L43.834 24.2917L46.959 27.4167ZM25.084 29.5H4.25065V8.66671L20.9173 19.0834L37.584 8.66671V19.0834H41.7507V4.50004C41.7507 2.20837 39.8757 0.333374 37.584 0.333374H4.25065C1.95898 0.333374 0.0839844 2.20837 0.0839844 4.50004V29.5C0.0839844 31.7917 1.95898 33.6667 4.25065 33.6667H25.084V29.5ZM37.584 4.50004L20.9173 14.9167L4.25065 4.50004H37.584Z"
+              fill="#2D68C4"
+            />
+          </svg>
+        </div>
+        <h2 class="modal__heading">Дякуємо за звернення</h2>
+        <p class="modal__text">
+          Ми зв'яжемося з вами в найближчий час
+        </p>
+        <a href="./" class="modal__link modal__button">Повернутись на головну сторінку</a>
+      </div>
+    </div>
+    <div class="backdrop backdrop--form" id="backdropForm">
+      <div class="modal__wrapper">
+        <div class="modal modal__form">
+          <div class="modal__form--heading">
+            <h2>Запит на консультацію</h2>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              class="modalSentCrosses"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.15207 7.49951L14.7604 1.89098C14.9146 1.73659 14.9998 1.53061 15 1.31098C15 1.09122 14.9149 0.885 14.7604 0.730854L14.2689 0.239512C14.1144 0.0847561 13.9084 0 13.6885 0C13.469 0 13.263 0.0847561 13.1085 0.239512L7.50024 5.84768L1.89171 0.239512C1.73744 0.0847561 1.53134 0 1.31159 0C1.09207 0 0.885976 0.0847561 0.731707 0.239512L0.24 0.730854C-0.08 1.05085 -0.08 1.57134 0.24 1.89098L5.84841 7.49951L0.24 13.1078C0.0856098 13.2624 0.000609756 13.4684 0.000609756 13.6881C0.000609756 13.9077 0.0856098 14.1137 0.24 14.2682L0.731585 14.7595C0.885854 14.9141 1.09207 14.999 1.31146 14.999C1.53122 14.999 1.73732 14.9141 1.89159 14.7595L7.50012 9.15122L13.1084 14.7595C13.2629 14.9141 13.4689 14.999 13.6884 14.999H13.6887C13.9083 14.999 14.1143 14.9141 14.2688 14.7595L14.7602 14.2682C14.9145 14.1138 14.9996 13.9077 14.9996 13.6881C14.9996 13.4684 14.9145 13.2624 14.7602 13.1079L9.15207 7.49951Z"
+                fill="#949DAB"
+              />
+            </svg>
+          </div>
+          <form action="/email" method="POST" class="form" id="demoForm">
+            <div class="form__right">
+              <div class="form__block form__block--input">
+                <label for="" class="form__label"
+                  >Ім'я <span class="form__asterisk">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form__input"
+                  id="formName"
+                  name="Name"
+                  required
+                />
+                <span class="form__invalid-message"
+                  >Поле має бути заповненим</span
+                >
+              </div>
+              <div class="form__block form__block--input">
+                <label for="" class="form__label"
+                  >Область <span class="form__asterisk">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form__input"
+                  name="Region"
+                  id="companyInput"
+                  required
+                />
+  
+                <span class="form__invalid-message"
+                  >Поле має бути заповненим</span
+                >
+              </div>
+              <div class="form__block form__block--input">
+                <label for="" class="form__label"
+                  >Номер телефону <span class="form__asterisk">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form__input"
+                  name="Phone"
+                  id="formPhoneInput"
+                  pattern="^\+?[\s\-\(\)0-9]{7,19}$"
+                  value="+"
+                  required
+                />
+  
+                <span class="form__invalid-message"
+                  >Поле має бути заповненим</span
+                >
+              </div>
+            </div>
+            <div class="form__left">
+              <div class="form__block form__block--input">
+                <label for="" class="form__label"
+                  >Місто/село <span class="form__asterisk">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form__input"
+                  name="Town"
+                  required
+                />
+  
+                <span class="form__invalid-message"
+                  >Поле має бути заповненим</span
+                >
+              </div>
+              <div class="form__block form__block--input">
+                <label for="" class="form__label"
+                  >E-mail <span class="form__asterisk">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form__input"
+                  name="Email"
+                  id="Email"
+                  required
+                />
+                <span class="form__invalid-message"
+                  >Введіть коректний email</span
+                >
+              </div>
+              <div class="form__block form__block--input">
+                <label for="" class="form__label">Адреса</label>
+                <input
+                  type="text"
+                  class="form__input"
+                  name="Adress"
+                  id="linkInput"
+                />
+              </div>
+            </div>
+            <div class="form__bottom">
+              <div class="form__block form__block--input">
+                <label for="" class="form__label">Повідомлення</label>
+                <textarea
+                  class="form__input form__input--textarea"
+                  name="messageInput"
+                  id="messageInput"
+                ></textarea>
+              </div>
+              <button type="submit" class="form__button" id="demoFormButton">
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="dist/bundle.js"></script>
     <script>
       function initMap() {

@@ -1,5 +1,7 @@
+let MockObj = { id: 0 };
+
 const slides = Array.from(document.querySelectorAll(".slider__slide"));
-const slider = document.querySelector(".slider");
+const slider = document.querySelector(".slider") || MockObj;
 const arrows = Array.from(document.querySelectorAll(".arrow"));
 const lines = Array.from(document.querySelectorAll(".numbers__line"));
 const numbers = Array.from(document.querySelectorAll(".numbers__number"));
@@ -117,7 +119,7 @@ window.addEventListener("DOMContentLoaded", () => {
     line.style.width = "0px";
   });
 
-  if (slider.id === "drillingSlider") {
+  if (slider.id && slider.id === "drillingSlider") {
     numbers.forEach((number) => {
       number.style.display = "none";
     });

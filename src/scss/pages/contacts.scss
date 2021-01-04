@@ -1,58 +1,146 @@
-.contacts {
-  position: relative;
-  .breadcrumbs {
-    position: absolute;
-    top: -8rem;
-    left: 4rem;
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 25px;
-    justify-content: flex-start;
-    padding: 5px 0;
-    margin-bottom: 10px;
-    grid-row: 1/2;
-    grid-column: 1 / -1;
-  }
-  .breadcrumbs li {
-    color: #2d68c4;
-    font-weight: 500;
-    font-size: 12px;
-    list-style: none;
+#contactsPage {
+  background: url("./../img/contacts/pexels-photo-355808.jpg"), $form-color-2;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    &::marker {
-      visibility: hidden;
-      display: none;
+  *,
+  p,
+  div > {
+    font-family: $main-font !important;
+  }
+
+  #contactsContacts {
+    font-family: $main-font !important;
+  }
+
+  .heading {
+    background-color: transparent;
+
+    h2 {
+      color: $white-color;
     }
   }
 
-  .breadcrumbs li:hover {
-    cursor: pointer;
+  .heading--underline {
+    @include respond(tab-port) {
+      margin-bottom: 1rem;
+    }
   }
 
-  .breadcrumbs li a {
-    color: #576478;
-    text-decoration: none;
-    position: relative;
-    font-size: 1.8rem;
+  .contacts__row {
+    @include respond(tab-port) {
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+    }
+
+    @include respond(phone) {
+      width: 100vw !important;
+    }
   }
 
-  .breadcrumbs li:last-child a {
-    color: #2d68c4;
+  .row {
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
   }
 
-  .breadcrumbs li:not(:last-child) a::after {
-    content: "/";
-    display: block;
-    position: absolute;
-    right: -16px;
-    top: -2px;
-    color: #576478;
+  .contacts__credentials {
+    margin-bottom: 2rem;
   }
+
+  .contacts__contacts {
+    @include respond(phone) {
+      margin-left: 0;
+      width: 90%;
+    }
+  }
+
+  #contactsMap {
+    @include respond(phone) {
+      width: 89%;
+    }
+    & > div {
+      @include respond(tab-port) {
+        width: 94% !important;
+      }
+    }
+  }
+
+  textarea {
+    @include respond(tab-port) {
+      width: 96.5%;
+    }
+
+    @include respond(phone) {
+      width: 85%;
+    }
+  }
+
+  .contacts__form--row {
+    @include respond(tab-port) {
+      margin-top: 2rem;
+    }
+
+    button {
+      @include respond(phone) {
+        margin-right: 5%;
+      }
+    }
+  }
+
+  .contacts__form--inputs {
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  .breadcrumbs {
+    li {
+      &:nth-child(2) {
+        a {
+          font-weight: bold;
+        }
+      }
+      a {
+        color: $white-color;
+      }
+    }
+  }
+
+  nav.navbar {
+    background: $font-color-2 !important;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+
+    @include respond(phone) {
+      padding-bottom: 0;
+    }
+
+    &.sticky {
+      margin-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+}
+
+.contacts {
+  position: relative;
+  padding-top: 8rem;
+  background-color: transparent;
+
+  @include breadcrumbs;
 
   @include heading;
 
+  .heading {
+    margin-top: 0;
+  }
+
   .contacts__row {
     background-color: $white-color;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-radius: 5px;
 
     .col-1-of-2 {
       @include respond(tab-port) {
@@ -62,7 +150,9 @@
     }
   }
 
-  &__contacts__credentials {
+  &__credentials {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   #contactsMap {
@@ -77,12 +167,15 @@
   }
 
   &__contacts {
-    margin-top: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 2.7rem;
     line-height: 157%;
   }
@@ -101,13 +194,42 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
 
       @include respond(tab-port) {
         width: 100%;
       }
+    }
+
+    &--block {
+      width: 100%;
+
+      &--email {
+        justify-content: flex-end;
+
+        input {
+          width: 96% !important;
+
+          @include respond(phone) {
+            width: 90% !important;
+            margin-top: 2rem;
+          }
+        }
+      }
+
+      &--phone {
+        input {
+          width: 98% !important;
+
+          @include respond(phone) {
+            width: 90% !important;
+          }
+        }
+        margin-bottom: 2rem;
+      }
+
       input {
-        width: 45%;
+        width: 90%;
         height: 5.3rem;
         background: #ececec;
         border-radius: 6px;
@@ -118,6 +240,7 @@
         letter-spacing: 1px;
       }
     }
+
     textarea {
       width: 95.7%;
       height: 22.5rem;
@@ -128,6 +251,7 @@
       border: none;
       padding: 1.5rem;
       font-size: 1.6rem;
+      font-family: $main-font !important;
     }
 
     &--row {
@@ -136,7 +260,7 @@
       justify-content: flex-end;
       height: 6rem;
       margin-top: 1rem;
-      &-button {
+      button {
         height: 100%;
         border: none;
         padding: 0 10rem;

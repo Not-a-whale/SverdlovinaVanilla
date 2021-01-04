@@ -213,7 +213,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
-@mixin boxes {
+@mixin boxes() {
   .boxes {
     display: flex;
     flex-direction: column;
@@ -287,6 +287,44 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
     @include respond(tab-port) {
       text-align: center;
+    }
+  }
+}
+
+@mixin breadcrumbs() {
+  .breadcrumbs {
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: auto;
+
+    li {
+      margin-left: 25px;
+      list-style: none;
+      font-size: 14px;
+      font-family: $main-font;
+      display: flex;
+      align-items: center;
+
+      a {
+        position: relative;
+      }
+
+      &:not(:last-child) {
+        a::after {
+          position: absolute;
+          left: calc(100% + 11px);
+          content: "/";
+        }
+      }
+
+      &:last-child {
+        a {
+          color: #78c0ff;
+        }
+      }
     }
   }
 }

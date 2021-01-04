@@ -108,7 +108,7 @@
         font-weight: 300;
         width: 50%;
 
-        @include respond(tab-port) {
+        @include respond(tab-land) {
           width: 85%;
           padding: 10px;
           font-size: 1.9rem;
@@ -248,6 +248,9 @@
       &-top {
         text-align: center;
         &-text {
+          @include respond(tab-port) {
+            width: 100% !important;
+          }
         }
       }
 
@@ -272,7 +275,7 @@
         font-family: $main-font;
         font-weight: 300;
         color: $white-color;
-        width: 40% !important;
+        width: 40%;
         margin-top: 7rem;
         margin-bottom: 7rem;
 
@@ -294,7 +297,7 @@
         background-color: $white-color;
 
         @include respond(tab-port) {
-          left: 50%;
+          left: 51%;
           transform: translate(-50%, -50%);
           top: -25px;
         }
@@ -352,39 +355,4 @@
     }
   }
 }
-
-.breadcrumbs {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  li {
-    margin-left: 25px;
-    list-style: none;
-    font-size: 14px;
-    font-family: $main-font;
-    display: flex;
-    align-items: center;
-
-    a {
-      position: relative;
-    }
-
-    &:not(:last-child) {
-      a::after {
-        position: absolute;
-        left: calc(100% + 11px);
-        content: "/";
-      }
-    }
-
-    &:last-child {
-      a {
-        color: #78c0ff;
-      }
-    }
-  }
-}
+@include breadcrumbs;

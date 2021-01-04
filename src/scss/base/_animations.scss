@@ -1,0 +1,32 @@
+@-webkit-keyframes roll {
+  0% {
+    color: #48a7fb;
+    transform: scale(1);
+  }
+
+  50% {
+    color: #48a7fb;
+    transform: scale(1.0133);
+  }
+
+  100% {
+    color: #48a7fb;
+    transform: scale(1);
+  }
+}
+@keyframes roll {
+  0% {
+    color: #48a7fb;
+    transform: scale(1);
+  }
+
+  50% {
+    color: #48a7fb;
+    transform: scale(1.05);
+  }
+
+  100% {
+    color: #48a7fb;
+    transform: scale(1);
+  }
+}

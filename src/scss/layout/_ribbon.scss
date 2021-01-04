@@ -136,6 +136,8 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s;
+    -webkit-animation: roll 1s ease infinite;
+    animation: roll 1s infinite running;
 
     @include respond(tab-port) {
       width: 100%;
@@ -144,7 +146,7 @@
 
     &:hover {
       background-color: #5cb85c;
-      color: $white-color;
+      color: #fff !important;
       transform: scale(1.02);
     }
 

@@ -3,16 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sverdlovina</title>
+    <title>Буріння</title>
     <link href="https://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
   </head>
-  <body id="contactsPage">
+  <body>
     <nav class="navbar">
       <div href="#" class="navbar__logo">
         <object
@@ -30,19 +35,32 @@
       <div class="navbar__right">
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Про компанію</a>
+            <a href="#" class="navbar__link" style="font-family: Roboto"
+              >Про компанію</a
+            >
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Послуги</a>
+            <a href="#" class="navbar__link" style="font-family: 'Roboto'"
+              >Послуги</a
+            >
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Фотогалерея</a>
+            <a href="/imgGallery.html" class="navbar__link" style="font-family: Roboto"
+              >Фотогалерея</a
+            >
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Блог</a>
+            <a href="#" class="navbar__link" style="font-family: Roboto"
+              >Блог</a
+            >
           </li>
           <li class="navbar__item">
-            <a href="/contacts.html" class="navbar__link">Контакти</a>
+            <a
+              href="/contacts.html"
+              class="navbar__link"
+              style="font-family: Roboto"
+              >Контакти</a
+            >
           </li>
         </ul>
         <div class="navbar__phone">
@@ -66,7 +84,7 @@
               />
               <label for="ukrFlag">
                 <img
-                  src="./img/navigation/320px-Flag_of_Ukraine.svg.webp"
+                  src="./navigation/320px-Flag_of_Ukraine.svg.webp"
                   alt=""
                   style="width: 30px; height: 20px"
                 />
@@ -82,7 +100,7 @@
               />
               <label for="ruFlag">
                 <img
-                  src="./img/320px-Flag_of_Russia.svg.webp"
+                  src="./img/navigation/320px-Flag_of_Russia.svg.webp"
                   alt=""
                   style="width: 30px; height: 20px"
                   class="flagLabel"
@@ -107,9 +125,12 @@
         <div class="link__hamburger link__hamburger--3"></div>
       </a>
     </nav>
-<!--     <section class="form-slider">
-      <div class="slider">
-        <div class="slider__slide slider__slide-1 active-slide"></div>
+    <section class="form-slider">
+      <div class="slider" id="drillingSlider">
+        <div
+          class="slider__slide slider__slide-1 active-slide"
+          id="drillingBackground"
+        ></div>
         <div class="slider__slide slider__slide-2"></div>
         <div class="slider__slide slider__slide-3"></div>
       </div>
@@ -172,53 +193,27 @@
         <span class="numbers__line numbers__line--2 second"></span>
         <span class="numbers__number numbers__number--3">03</span>
       </div>
-    </section> -->
-    <div class="contacts">
-      <ul class="breadcrumbs">
-        <li><a href="./index.html">Головна</a></li>
-        <li><a href="./contacts.html">Зв'язатися з нами</a></li>
-      </ul>
-      <div class="heading">
-        <h2 class="heading--text">Контакти</h2>
-        <span class="heading--underline"></span>
-      </div>
-      <div class="row contacts__row">
-        <div class="col-1-of-2 contacts__credentials">
-          <div id="contactsMap"></div>
-          <div class="contacts__contacts">
-            <p id="contactsContacts">м. Рівне, вул. Кавказька 3, +380673623523</p>
-          </div>
+    </section>
+    <section class="map">
+      <form class="map__form" action="/">
+        <div class="map__heading">
+          Залишити<br> відгук
         </div>
-        <div class="col-1-of-2 contacts__credentials">
-          <form action="/" method="post" class="contacts__form" action="https://formspree.io/f/myybjlzk">
-            <div class="contacts__form--inputs">
-              <div class="contacts__form--block">
-                <input type="text" name="nameInput" id="nameInput" placeholder="Ім'я" class="form__input">
-              </div>
-              <div class="contacts__form--block contacts__form--block--email">
-                <input class="form__input" type="text" required name="emailInput" id="emailInput" placeholder="Ваш E-mail *" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
-              </div>
-            </div>
-            <div class="contacts__form--block contacts__form--block--phone">
-              <input class="form__input" type="text" required name="phoneInput" id="phoneInput" placeholder="Ваш телефон *" pattern="^\+?[\s\-\(\)0-9]{7,19}$"
-              value="+">
-            </div>
-            <textarea placeholder="Ваше повідомлення" name="messageInput" id="messageInput" cols="30" rows="10"></textarea>
-            <div class="contacts__form--row">
-              <button  class="form__input" type="submit" class="contacts__form--row-button" id="contactsFormButton">Надіслати</button>
-            </div>
-          </form>
-        </div>
+        <input type="text" name="mapName" id="mapName" class="map__name" placeholder="Ваше ім'я">
+        <textarea name="mapComment" id="mapComment" class="map__comment" placeholder="Відгук"></textarea>
+        <button type="submit" class="map__button">Надіслати</button>
+      </form>
+      <div class="map__row" id="mapRow">
       </div>
-    </div>
+    </section>
     <footer class="footer">
       <div class="footer__row">      
         <div class="breadcrumbs">
           <li><a href="/">Про компанію</a></li>
           <li><a href="/services.html">Послуги</a></li>
-          <li><a href="imgGallery.html">Фотогалерея</a></li>
+          <li><a href="./imgGallery.html">Фотогалерея</a></li>
           <li><a href="/blog.html">Блог</a></li>
-          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="/contacts.html">Контакти</a></li>
         </div>
       <div class="footer__number">
         <a href="tel: +380636256317" style="display: flex; align-items: center; font-size: 1.8rem; color: #fff;">
@@ -232,48 +227,11 @@
         </a>
       </div>
     </footer> 
-    <div class="backdrop-sent backdrop" id="backdropSent">
-      <div class="modal modal--sent" id="modalSent">
-        <svg
-          width="14"
-          height="14"
-          viewBox="0 0 14 14"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          id="modalSentCross"
-        >
-          <path
-            d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
-            fill="white"
-          />
-        </svg>
-
-        <div class="modal__picture">
-          <svg
-            width="47"
-            height="38"
-            viewBox="0 0 47 38"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M46.959 27.4167L36.5423 37.8334L29.2507 30.5417L32.3757 27.4167L36.5423 31.5834L43.834 24.2917L46.959 27.4167ZM25.084 29.5H4.25065V8.66671L20.9173 19.0834L37.584 8.66671V19.0834H41.7507V4.50004C41.7507 2.20837 39.8757 0.333374 37.584 0.333374H4.25065C1.95898 0.333374 0.0839844 2.20837 0.0839844 4.50004V29.5C0.0839844 31.7917 1.95898 33.6667 4.25065 33.6667H25.084V29.5ZM37.584 4.50004L20.9173 14.9167L4.25065 4.50004H37.584Z"
-              fill="#2D68C4"
-            />
-          </svg>
-        </div>
-        <h2 class="modal__heading">Благодарим Вас за сообщение!</h2>
-        <p class="modal__text">
-          Наша команда свяжется с вами в скором времени!
-        </p>
-        <a href="./" class="modal__link modal__button">Вернуться на Главную</a>
-      </div>
-    </div>
-    <script type="text/javascript" src="./bundle.js"></script>
+    <script type="text/javascript" src="/bundle.js"></script>
     <script>
       function initMap() {
         const location = { lat: 50.62469, lng: 26.25447 };
-        const map = new google.maps.Map(document.getElementById("contactsMap"), {
+        const map = new google.maps.Map(document.getElementById("mapRow"), {
           zoom: 7,
           center: location,
         });
@@ -285,16 +243,15 @@
       }
       var docWidth = document.documentElement.offsetWidth;
 
-      [].forEach.call(document.querySelectorAll("*"), function (el) {
-        if (el.offsetWidth > docWidth) {
-          console.log(el);
-        }
-      });
+      [].forEach.call(
+      document.querySelectorAll('*'),
+      function(el) {
+      if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
     </script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRzcO-IyLJ44FM0IiUOqBtxHijOuhe8Ok&callback=initMap"
-    ></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRzcO-IyLJ44FM0IiUOqBtxHijOuhe8Ok&callback=initMap"></script>
   </body>
 </html>
