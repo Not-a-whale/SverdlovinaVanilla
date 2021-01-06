@@ -1,4 +1,5 @@
 .testimonials {
+  font-family: $main-font !important;
   @include heading;
 
   .heading {
@@ -62,6 +63,8 @@
     &--text {
       font-size: 1.6rem;
       line-height: 149%;
+      color: #191d22;
+      font-weight: 400;
     }
   }
 
@@ -77,6 +80,11 @@
   }
 
   &__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   &__text {

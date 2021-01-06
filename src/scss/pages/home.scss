@@ -1,0 +1,60 @@
+body#aboutUsPage {
+  nav#about {
+    background-color: rgba($font-color, 0.4);
+
+    .navbar__right {
+      padding-top: 0;
+    }
+  }
+
+  .about {
+    position: relative;
+    background: url("./../img/imgGallery/2.jpg") no-repeat left;
+    background-size: 60% 100%;
+    transform: translateY(12rem);
+    font-family: $main-font;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    min-height: 70vh;
+
+    @include respond(tab-port) {
+      background-size: cover;
+    }
+
+    &__container {
+      background-color: #fdfdfd;
+      overflow: hidden;
+      width: 55%;
+      position: absolute;
+      right: 0;
+      top: 15%;
+      padding: 3rem;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+
+      @include respond(tab-port) {
+        right: 5%;
+        left: 5%;
+        width: 80%;
+        border-radius: 20px;
+        background-color: rgba($color: #ffff, $alpha: 0.9);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.3rem;
+        line-height: 2.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__text--us {
+      font-size: 1.6rem;
+      line-height: 149%;
+      color: #191d22;
+      font-weight: 400;
+    }
+  }
+}
